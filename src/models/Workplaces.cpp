@@ -1,7 +1,7 @@
-#include "workplaces.h"
+#include "../../include/models/Workplaces.h"
 
 workplaces::workplaces(){
-    //ctor
+
     name = "";
 }
 
@@ -9,11 +9,13 @@ workplaces::workplaces(){
 ostream& operator <<(ostream& out, workplaces& workplace){
     out << workplace.name << endl;
 
+    return out;
 }
 
 istream& operator >>(istream& in, workplaces& workplace){
     in >> workplace.name;
 
+    return in;
 }
 
 void workplaces::save()
@@ -66,9 +68,8 @@ void workplaces::print_line(int line_no){ // Prentar uppgefna línu eftir línunúm
 
 }
 
-void workplaces::start_register()
+/*void workplaces::start_register()
 {
-
     char input = 'y';
 
     while (input == 'y'|| input == 'Y')
@@ -76,15 +77,12 @@ void workplaces::start_register()
         workplaces workplace;
         cout << "Enter a Location: ";
         cin >> workplace;
-        workplace.save();
+        wRepo.save();
 
         cout << "Do you want to register more Locations? Type 'y' for yes or 'n' for no: ";
         cin >> input;
-
-
     }
-
-}
+}*/
 
 int workplaces::number_locations()
 {
@@ -100,8 +98,7 @@ int workplaces::number_locations()
         fin.close();
         return count_line;
     }
-    else cout << "Unable to open file.";
-
-
-
+    else {
+        cout << "Unable to open file.";
+    }
 }

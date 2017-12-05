@@ -108,3 +108,87 @@
 	"Workplaces.h"
 	"Other.h"
 
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512484018 source:c:\users\lenovo\documents\github\pizzaverkefni\src\models\workplaces.cpp
+	"../../include/models/Workplaces.h"
+
+1512484626 c:\users\lenovo\documents\github\pizzaverkefni\include\models\workplaces.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512483515 c:\users\lenovo\documents\github\pizzaverkefni\include\repositories\workplacesrepository.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512484280 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\managementui.cpp
+	"../../include/UI/ManagementUI.h"
+
+1512484047 source:c:\users\lenovo\documents\github\pizzaverkefni\src\repositories\workplacesrepository.cpp
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\models\other.cpp
+	"Other.h"
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\models\pizzamenu.cpp
+	"PizzaMenu.h"
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"toppings.h"
+	<vector>
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\models\toppings.cpp
+	"Toppings.h"
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\deliveryui.cpp
+	"DeliveryUI.h"
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\kitchenui.cpp
+	"KitchenUI.h"
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\mainui.cpp
+	"MainUI.h"
+	<iostream>
+	<string>
+	"PizzaMenu.h"
+	"Toppings.h"
+	"workplaces.h"
+
+1512484262 c:\users\lenovo\documents\github\pizzaverkefni\include\ui\managementui.h
+	<iostream>
+	"../models/Workplaces.h"
+	"../models/PizzaMenu.h"
+	"../models/Toppings.h"
+	"../models/Other.h"
+
+1512482154 c:\users\lenovo\documents\github\pizzaverkefni\include\models\pizzamenu.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"toppings.h"
+	<vector>
+	"Other.h"
+
+1512482154 c:\users\lenovo\documents\github\pizzaverkefni\include\models\toppings.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+
+1512482154 c:\users\lenovo\documents\github\pizzaverkefni\include\models\other.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\salesui.cpp
+	"SalesUI.h"
+
+1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\service\price.cpp
+	"Price.h"
+

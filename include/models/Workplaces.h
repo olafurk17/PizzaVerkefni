@@ -1,6 +1,5 @@
 #ifndef WORKPLACES_H
 #define WORKPLACES_H
-
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -16,7 +15,7 @@ class workplaces
         void save();
         void print();
         void print_line(int line_no);
-        void start_register();
+        //void start_register();
         int number_locations();
 
     private:

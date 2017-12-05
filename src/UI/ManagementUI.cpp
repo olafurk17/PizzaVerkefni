@@ -1,4 +1,4 @@
-#include "ManagementUI.h"
+#include "../../include/UI/ManagementUI.h"
 
 ManagementUI::ManagementUI()
 {
@@ -43,14 +43,29 @@ void ManagementUI::mainMenu(){
         }
         else if(selection == 'l'){
             clear_screen();
-            workplaces reg;
-            reg.start_register();
+            start_register();
         }
         else if(selection == 'r'){
             clear_screen();
             running = false;
 
         }
+    }
+}
+
+void ManagementUI::start_register()
+{
+    char input = 'y';
+
+    while (input == 'y'|| input == 'Y')
+    {
+        workplaces workplace;
+        cout << "Enter a Location: ";
+        cin >> workplace;
+        workplace.save();
+
+        cout << "Do you want to register more Locations? Type 'y' for yes or 'n' for no: ";
+        cin >> input;
     }
 }
 
