@@ -1,0 +1,110 @@
+# depslib dependency file v1.0
+1512479340 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512481370 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\ui\mainui.h
+	"ManagementUI.h"
+	"SalesUI.h"
+	"KitchenUI.h"
+	"DeliveryUI.h"
+
+1512480355 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\ui\managementui.h
+	<iostream>
+	"Toppings.h"
+	"PizzaMenu.h"
+	"Workplaces.h"
+	"Other.h"
+
+1512479717 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\models\other.cpp
+	"Other.h"
+
+1512480149 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\models\other.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512479320 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\models\pizzamenu.cpp
+	"PizzaMenu.h"
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"toppings.h"
+	<vector>
+
+1512479320 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\models\pizzamenu.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"toppings.h"
+	<vector>
+	"Other.h"
+
+1512479320 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\models\toppings.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+
+1512479320 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\models\toppings.cpp
+	"Toppings.h"
+
+1512479320 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\models\workplaces.cpp
+	"workplaces.h"
+
+1512479320 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\models\workplaces.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512479320 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\service\price.cpp
+	"Price.h"
+
+1512479320 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\service\price.h
+	<iostream>
+	<fstream>
+	<string>
+
+1512481094 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\ui\mainui.cpp
+	"MainUI.h"
+	<iostream>
+	<string>
+	"PizzaMenu.h"
+	"Toppings.h"
+	"workplaces.h"
+
+1512480355 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\ui\managementui.cpp
+	"ManagementUI.h"
+
+1512480641 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\ui\salesui.h
+	<iostream>
+	"Toppings.h"
+	"PizzaMenu.h"
+	"Workplaces.h"
+	"Other.h"
+
+1512480595 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\ui\salesui.cpp
+	"SalesUI.h"
+
+1512481075 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\ui\kitchenui.h
+	<iostream>
+	"Toppings.h"
+	"PizzaMenu.h"
+	"Workplaces.h"
+	"Other.h"
+
+1512481075 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\ui\kitchenui.cpp
+	"KitchenUI.h"
+
+1512481265 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\src\ui\deliveryui.cpp
+	"DeliveryUI.h"
+
+1512481271 c:\users\kristin\desktop\verkelgt\pizzaassignment\include\ui\deliveryui.h
+	<iostream>
+	"Toppings.h"
+	"PizzaMenu.h"
+	"Workplaces.h"
+	"Other.h"
+
