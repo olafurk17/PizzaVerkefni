@@ -6,6 +6,7 @@
 #include "../models/PizzaMenu.h"
 #include "../models/Toppings.h"
 #include "../models/Other.h"
+#include "ToppingRepo.h"
 
 using namespace std;
 
@@ -16,7 +17,8 @@ class ManagementUI
         ManagementUI();
         void mainMenu();
         void clear_screen();
-        void start_register();
+        void register_location();
+        void register_toppings();
 
     private:
 };
