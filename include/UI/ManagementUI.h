@@ -7,6 +7,7 @@
 #include "../models/Toppings.h"
 #include "../models/Other.h"
 #include "ToppingRepo.h"
+#include "WorkplacesRepo.h"
 
 using namespace std;
 

@@ -12,11 +12,11 @@ class workplaces
         workplaces();
         friend ostream& operator <<(ostream& out, workplaces& workplace);
         friend istream& operator >>(istream& in, workplaces& workplace);
-        void save();
-        void print();
-        void print_line(int line_no);
+        //void save();
+        //void print();
+        //void print_line(int line_no);
         //void start_register();
-        int number_locations();
+        //int number_locations();
 
     private:
         string name;

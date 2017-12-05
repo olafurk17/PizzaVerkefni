@@ -112,10 +112,10 @@
 	<iostream>
 	"MainUI.h"
 
-1512484018 source:c:\users\lenovo\documents\github\pizzaverkefni\src\models\workplaces.cpp
+1512504090 source:c:\users\lenovo\documents\github\pizzaverkefni\src\models\workplaces.cpp
 	"../../include/models/Workplaces.h"
 
-1512484626 c:\users\lenovo\documents\github\pizzaverkefni\include\models\workplaces.h
+1512504090 c:\users\lenovo\documents\github\pizzaverkefni\include\models\workplaces.h
 	<string>
 	<iostream>
 	<fstream>
@@ -125,7 +125,7 @@
 	<iostream>
 	<fstream>
 
-1512484280 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\managementui.cpp
+1512503088 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\managementui.cpp
 	"../../include/UI/ManagementUI.h"
 
 1512484047 source:c:\users\lenovo\documents\github\pizzaverkefni\src\repositories\workplacesrepository.cpp
@@ -159,12 +159,14 @@
 	"Toppings.h"
 	"workplaces.h"
 
-1512484262 c:\users\lenovo\documents\github\pizzaverkefni\include\ui\managementui.h
+1512504090 c:\users\lenovo\documents\github\pizzaverkefni\include\ui\managementui.h
 	<iostream>
 	"../models/Workplaces.h"
 	"../models/PizzaMenu.h"
 	"../models/Toppings.h"
 	"../models/Other.h"
+	"ToppingRepo.h"
+	"WorkplacesRepo.h"
 
 1512482154 c:\users\lenovo\documents\github\pizzaverkefni\include\models\pizzamenu.h
 	<string>
@@ -175,7 +177,7 @@
 	<vector>
 	"Other.h"
 
-1512486280 c:\users\lenovo\documents\github\pizzaverkefni\include\models\toppings.h
+1512503088 c:\users\lenovo\documents\github\pizzaverkefni\include\models\toppings.h
 	"ToppingRepo.h"
 	<string>
 	<istream>
@@ -193,7 +195,7 @@
 1512482154 source:c:\users\lenovo\documents\github\pizzaverkefni\src\service\price.cpp
 	"Price.h"
 
-1512502783 c:\users\lenovo\documents\github\pizzaverkefni\include\repositories\toppingrepo.h
+1512503088 c:\users\lenovo\documents\github\pizzaverkefni\include\repositories\toppingrepo.h
 	<string>
 	<istream>
 	<iostream>
@@ -201,4 +203,13 @@
 
 1512502804 source:c:\users\lenovo\documents\github\pizzaverkefni\src\repositories\toppingrepo.cpp
 	"ToppingRepo.h"
+
+1512504459 c:\users\lenovo\documents\github\pizzaverkefni\include\repositories\workplacesrepo.h
+	"../models/Workplaces.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1512504478 source:c:\users\lenovo\documents\github\pizzaverkefni\src\repositories\workplacesrepo.cpp
+	"WorkplacesRepo.h"
 
