@@ -72,14 +72,15 @@ void ManagementUI::register_location()
 
 void ManagementUI::register_toppings() {
 
-    string toppings = "";
+    // toppings = "";
+    Toppings topp;
     char input = 'y';
 
     while (input == 'y'|| input == 'Y'){
-        ToppingRepo toppingsRepo;
+        ToppingRepo toppingRepo;
         cout << "Type the name of the topping: ";
-        cin >> toppings;
-        toppingsRepo.save(toppings);
+        cin >> topp;
+        toppingRepo.save(topp);
 
         cout << "Do you want to regester more toppings type 'y' for yes or 'n' for no: ";
         cin >> input;

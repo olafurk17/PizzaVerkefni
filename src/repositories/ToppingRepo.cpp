@@ -10,7 +10,7 @@ void ToppingRepo::save(Toppings& toppings){
     ofstream fout;
     fout.open("toppings.txt", ios::app);
     if(fout.is_open()){
-        fout << toppings.get_name << endl;
+        fout << toppings << endl;
     }
     fout.close();
 }
