@@ -4,6 +4,7 @@
 #include <istream>
 #include <iostream>
 #include <fstream>
+#include "../models/Toppings.h"
 
 using namespace std;
 
@@ -11,7 +12,7 @@ class ToppingRepo
 {
     public:
         ToppingRepo();
-        void save();
+        void save(Toppings toppings);
         void print();
 
     private:

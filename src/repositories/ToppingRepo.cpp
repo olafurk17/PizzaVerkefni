@@ -5,13 +5,12 @@ ToppingRepo::ToppingRepo()
     //ctor
 }
 
-void ToppingRepo::save(){
-    string name = "";
+void ToppingRepo::save(Toppings& toppings){
 
     ofstream fout;
     fout.open("toppings.txt", ios::app);
     if(fout.is_open()){
-        fout << name << endl;
+        fout << toppings.get_name << endl;
     }
     fout.close();
 }

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include/repositories" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -20,7 +21,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/UI/ManagementUI.h" />
+		<Unit filename="include/models/Workplaces.h" />
+		<Unit filename="include/repositories/WorkplacesRepo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/UI/ManagementUI.cpp" />
+		<Unit filename="src/models/Workplaces.cpp" />
+		<Unit filename="src/repositories/WorkplacesRepo.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

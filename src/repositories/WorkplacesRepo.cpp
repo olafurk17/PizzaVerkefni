@@ -5,13 +5,13 @@ WorkplacesRepo::WorkplacesRepo()
     //ctor
 }
 
-void WorkplacesRepo::save()
+void WorkplacesRepo::save(workplaces& workplaces)
 {
-    string name = "";
+    //string name = "";
     ofstream fout;
     fout.open("workplaces.txt", ios::app);
     if(fout.is_open()){
-        fout << name << endl;
+        fout << workplaces.get_name() << endl;
     }
     fout.close();
 }

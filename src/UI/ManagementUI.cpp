@@ -59,10 +59,10 @@ void ManagementUI::register_location()
 
     while (input == 'y'|| input == 'Y')
     {
-        WorkplacesRepo workplaceRepo;
+        workplaces workplaces;
         cout << "Enter a Location: ";
-        cin >> workplaceRepo;
-        workplaceRepo.save();
+        cin >> workplaces;
+        workRepo.save(workplaces);
 
         cout << "Do you want to register more Locations? Type 'y' for yes or 'n' for no: ";
         cin >> input;
@@ -79,7 +79,7 @@ void ManagementUI::register_toppings() {
         ToppingRepo toppingsRepo;
         cout << "Type the name of the topping: ";
         cin >> toppings;
-        toppingsRepo.save();
+        toppingsRepo.save(toppings);
 
         cout << "Do you want to regester more toppings type 'y' for yes or 'n' for no: ";
         cin >> input;

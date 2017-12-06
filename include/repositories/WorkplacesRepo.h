@@ -11,12 +11,13 @@ class WorkplacesRepo
 {
     public:
         WorkplacesRepo();
-        void save();
+        void save(workplaces& workplaces);
         void print();
         void print_line(int line_no);
         int number_locations();
 
     private:
+        workplaces locations;
 };
 
 #endif // WORKPLACESREPO_H

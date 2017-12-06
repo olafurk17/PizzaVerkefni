@@ -3,10 +3,11 @@
 
 #include <iostream>
 
-#include "Toppings.h"
-#include "PizzaMenu.h"
-#include "Workplaces.h"
-#include "Other.h"
+#include "../models/Toppings.h"
+#include "../models/PizzaMenu.h"
+#include "../models/Workplaces.h"
+#include "../models/Other.h"
+#include "WorkplacesRepo.h"
 
 
 class KitchenUI

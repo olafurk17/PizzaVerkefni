@@ -22,6 +22,7 @@ class ManagementUI
         void register_toppings();
 
     private:
+        WorkplacesRepo workRepo;
 };
 
 #endif // MANAGMENTUI_H
