@@ -24,7 +24,7 @@ void ManagementUI::mainMenu(){
 
             Toppings toppings;
             register_toppings();
-            clear_screen();
+            //clear_screen();
 
         }
         else if(selection == 'm') {
@@ -72,9 +72,31 @@ void ManagementUI::register_location() {
 void ManagementUI::register_toppings() {
 
     Toppings topp;
+    char answer = 's';
     char input = 'y';
+    char cont = 'n';
 
-    while (input == 'y'|| input == 'Y') {
+    cout << "Type 's' to see registered toppings or 't' to register toppings: ";
+    cin >> answer;
+
+    if (answer == 's' || answer == 'S') {
+        ToppingRepo toppingRepo;
+        toppingRepo.print();
+        cout << endl << "Do you want to register toppins? Type 'y' for yes and 'n' for no: ";
+        cin >> cont;
+
+        while (cont == 'y'|| cont == 'Y') {
+        ToppingRepo toppingRepo;
+        cout << "Type the name of the topping: ";
+        cin >> topp;
+        toppingRepo.save(topp);
+
+        cout << "Do you want to regester more toppings type 'y' for yes or 'n' for no: ";
+        cin >> cont;
+        }
+    }
+    else if (answer == 't' || answer == 'T') {
+        while (input == 'y'|| input == 'Y') {
         ToppingRepo toppingRepo;
         cout << "Type the name of the topping: ";
         cin >> topp;
@@ -82,7 +104,7 @@ void ManagementUI::register_toppings() {
 
         cout << "Do you want to regester more toppings type 'y' for yes or 'n' for no: ";
         cin >> input;
-
+        }
     }
 }
 
