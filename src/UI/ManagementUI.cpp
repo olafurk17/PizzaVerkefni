@@ -22,15 +22,14 @@ void ManagementUI::mainMenu(){
         if(selection == 't'){
             clear_screen();
 
-            Toppings toppings;
-            register_toppings();
-            clear_screen();
+           // Toppings toppings;
+            //toppings.startRegester(toppings);
+            //clear_screen();
 
         }
         else if(selection == 'm'){
             clear_screen();
-            PizzaMenu pizza;
-            pizza.startRegester(pizza);
+            Menu();
 
         }
         else if(selection == 's'){
@@ -43,7 +42,7 @@ void ManagementUI::mainMenu(){
         }
         else if(selection == 'l'){
             clear_screen();
-            register_location();
+            registerLocation();
         }
         else if(selection == 'r'){
             clear_screen();
@@ -53,38 +52,152 @@ void ManagementUI::mainMenu(){
     }
 }
 
-void ManagementUI::register_location()
+void ManagementUI::regesterPizza(PizzaMenu& pizza) {
+
+    char inpute = 'y';
+    string str;
+    int t, p;
+
+    while (inpute == 'y'|| inpute == 'Y')
+    {   clear_screen();
+        PizzaMenu pizza;
+
+        cout << "Name of the pizza? ";
+        cin >> str;
+        pizza.setname(str);
+        cout << "How many toppings are on " << pizza.getname() << " ? ";
+        cin >> t;
+        pizza.settoppingCnt(t);
+        cout << "What toppings are on " << pizza.getname() << " ? ";
+        for (int i = 0; i < pizza.gettoppingCnt(); i++)
+        {
+            string str;
+            cin >> str;
+
+            menu.pizzaToppings.push_back(str);
+        }
+
+           service.save(pizza);
+
+        cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
+        cin >> inpute;
+        clear_screen();
+
+    }
+
+}
+
+void ManagementUI::Menu(){
+    char input;
+    ManagementUI ui;
+    do{
+        clear_screen();
+        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
+        cin >> input;
+        if (input == 'P' || input == 'p'){
+                PizzaMenu pizza;
+                ui.regesterPizza(pizza);
+        }
+        if (input == 'o'|| input == 'O'){
+            Other other;
+         ui.registerOther(other);
+
+        }
+
+        cout << "Do you want to register more items on the menu? Type 'y' for yes or 'n' for no: " << endl;
+        cin >> input;
+        clear_screen();
+        }
+
+        while (input == 'y' || input =='Y');
+}
+
+void ManagementUI::registerOther(Other& other){
+
+    char input;
+    string str;
+
+    do {
+    other.clear_screen();
+
+    cout << "What would you like to regester?" << endl << endl;
+    cout << "s : Soda" << endl;
+    cout << "b : Bread " << endl;
+    cout << "d : Desserts" << endl;
+    cout << "q : Quit" << endl;
+    cin >> input;
+
+    if (input == 's' || input == 'S'){
+        char inputs;
+        do{
+            other.clear_screen();
+            cout << "Type in the name of the soda: ";
+            cin >> str;
+            Other other(str);
+            cout << other;
+            otherservice.saveSoda(other);
+
+            cout << "Do you want to regester more soda's on the menu 'y' for yes or 'n' for no: ";
+            cin >> inputs;
+        }
+        while (inputs == 'y'|| inputs == 'Y');
+        other.clear_screen();
+
+}
+     if (input == 'b' || input == 'B'){
+        char inputb;
+        do{
+        other.clear_screen();
+
+        cout << "Type in the name of the bread: ";
+        cin >> str;
+        other.setbread(str);
+        otherservice.saveBread();
+
+        cout << "Do you want to regester more bread's on the menu 'y' for yes or 'n' for no: ";
+        cin >> input;
+        }
+        while (input == 'y'|| input == 'Y');
+        other.clear_screen();
+    }
+     if (input == 'd' || input == 'D'){
+
+        char inputb;
+        do{
+        other.clear_screen();
+
+        cout << "Type in the name of the Desert: ";
+        cin >> str;
+        other.setdessert(str);
+        otherservice.saveDessert();
+
+        cout << "Do you want to regester more bread's on the menu 'y' for yes or 'n' for no: ";
+        cin >> input;
+        }
+        while (input == 'y'|| input == 'Y');
+        other.clear_screen();
+    }
+
+}
+    while (input == 'y' || input == 'Y');
+
+
+
+}
+
+void ManagementUI::registerLocation()
 {
     char input = 'y';
 
     while (input == 'y'|| input == 'Y')
     {
-        workplaces workplaces;
+        workplaces workplace;
         cout << "Enter a Location: ";
-        cin >> workplaces;
-        workRepo.save(workplaces);
+        cin >> workplace;
+       // workplace.save();
 
         cout << "Do you want to register more Locations? Type 'y' for yes or 'n' for no: ";
         cin >> input;
-    }
-}
-
-
-void ManagementUI::register_toppings() {
-
-    // toppings = "";
-    Toppings topp;
-    char input = 'y';
-
-    while (input == 'y'|| input == 'Y'){
-        ToppingRepo toppingRepo;
-        cout << "Type the name of the topping: ";
-        cin >> topp;
-        toppingRepo.save(topp);
-
-        cout << "Do you want to regester more toppings type 'y' for yes or 'n' for no: ";
-        cin >> input;
-
     }
 }
 

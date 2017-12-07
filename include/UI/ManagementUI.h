@@ -3,11 +3,12 @@
 #include <iostream>
 
 #include "../models/Workplaces.h"
-#include "../models/PizzaMenu.h"
 #include "../models/Toppings.h"
 #include "../models/Other.h"
-#include "ToppingRepo.h"
-#include "WorkplacesRepo.h"
+#include "PizzaMenuService.h"
+#include "OtherService.h"
+
+
 
 using namespace std;
 
@@ -18,11 +19,15 @@ class ManagementUI
         ManagementUI();
         void mainMenu();
         void clear_screen();
-        void register_location();
-        void register_toppings();
+        void registerLocation();
+        void regesterPizza(PizzaMenu& pizza);
+        void Menu();
+        void registerOther(Other& other);
 
     private:
-        WorkplacesRepo workRepo;
+        PizzaMenu menu;
+        PizzaMenuService service;
+        OtherService otherservice;
 };
 
 #endif // MANAGMENTUI_H

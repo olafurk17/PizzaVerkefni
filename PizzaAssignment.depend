@@ -242,3 +242,162 @@
 	"../models/Workplaces.h"
 	"../models/Other.h"
 
+1512653816 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\main.cpp
+	<iostream>
+	"include/UI/MainUI.h"
+
+1512481370 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\mainui.h
+	"ManagementUI.h"
+	"SalesUI.h"
+	"KitchenUI.h"
+	"DeliveryUI.h"
+
+1512652680 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\managementui.h
+	<iostream>
+	"../models/Workplaces.h"
+	"../models/Toppings.h"
+	"../models/Other.h"
+	"PizzaMenuService.h"
+	"OtherService.h"
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\workplaces.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512655079 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"toppings.h"
+	<vector>
+	"Other.h"
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\toppings.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+
+1512658087 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\other.h
+	<string>
+	<iostream>
+	<fstream>
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\toppingrepo.h
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"../models/Toppings.h"
+	"../models/Workplaces.h"
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\workplacesrepo.h
+	"../models/Workplaces.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\salesui.h
+	<iostream>
+	"../models/Toppings.h"
+	"../models/PizzaMenu.h"
+	"../models/Workplaces.h"
+	"../models/Other.h"
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\kitchenui.h
+	<iostream>
+	"../models/Toppings.h"
+	"../models/PizzaMenu.h"
+	"../models/Workplaces.h"
+	"../models/Other.h"
+	"WorkplacesRepo.h"
+
+1512602266 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\deliveryui.h
+	<iostream>
+	"../models/Toppings.h"
+	"../models/PizzaMenu.h"
+	"../models/Workplaces.h"
+	"../models/Other.h"
+
+1512655671 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
+	"../../include/models/PizzaMenu.h"
+	<string>
+	<istream>
+	<iostream>
+	<fstream>
+	"../../include/models/Toppings.h"
+	<vector>
+
+1512602266 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\toppings.cpp
+	"../../include/models/Toppings.h"
+
+1512602266 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\workplaces.cpp
+	"../../include/models/Workplaces.h"
+
+1512602266 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1512602266 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\workplacesrepo.cpp
+	"WorkplacesRepo.h"
+
+1512479320 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\price.cpp
+	"Price.h"
+
+1512485745 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\deliveryui.cpp
+	"DeliveryUI.h"
+
+1512602266 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\kitchenui.cpp
+	"../../include/UI/KitchenUI.h"
+
+1512481411 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\mainui.cpp
+	"MainUI.h"
+	<iostream>
+	<string>
+	"PizzaMenu.h"
+	"Toppings.h"
+	"workplaces.h"
+
+1512480595 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\salesui.cpp
+	"SalesUI.h"
+
+1512658096 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\other.cpp
+	"../../include/models/Other.h"
+
+1512658131 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
+	"../../include/UI/ManagementUI.h"
+
+1512656270 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\pizzamenuservice.h
+	"PizzaMenuRepo.h"
+
+1512655973 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\pizzamenurepo.h
+	<iostream>
+	<fstream>
+	<vector>
+	"../models/PizzaMenu.h"
+
+1512479320 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\price.h
+	<iostream>
+	<fstream>
+	<string>
+
+1512655984 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\pizzamenurepo.cpp
+	"PizzaMenuRepo.h"
+
+1512656207 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\pizzamenuservice.cpp
+	"PizzaMenuService.h"
+
+1512658343 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\otherrepo.cpp
+	"OtherRepo.h"
+
+1512658343 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\otherrepo.h
+	"../../include/models/Other.h"
+
+1512658368 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\otherservice.cpp
+	"OtherService.h"
+
+1512658383 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\otherservice.h
+	"OtherRepo.h"
+	"../models/Other.h"
+
