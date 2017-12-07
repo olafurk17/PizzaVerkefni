@@ -1,11 +1,12 @@
-#include "SalesUI.h"
+#include "../../include/UI/SalesUI.h"
 
 SalesUI::SalesUI()
 {
     //ctor
 }
 
-void SalesUI::sales(){
+void SalesUI::sales() {
+
     bool running = true;
     char selection;
     while (running == true){
@@ -17,19 +18,19 @@ void SalesUI::sales(){
 
         cin >> selection;
 
-        if(selection == 'n'){
+        if(selection == 'n') {
             clear_screen();
 
         }
-        else if(selection == 'v'){
+        else if(selection == 'v') {
             clear_screen();
 
         }
-        else if(selection == 'c'){
+        else if(selection == 'c') {
             clear_screen();
 
         }
-        else if(selection == 'r'){
+        else if(selection == 'r') {
             clear_screen();
             running = false;
 
@@ -37,7 +38,7 @@ void SalesUI::sales(){
     }
 }
 
-void SalesUI::clear_screen(){
+void SalesUI::clear_screen() {
 
     for(int i = 0; i < 30; i++){
         cout << endl;

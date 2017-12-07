@@ -5,7 +5,7 @@ ToppingRepo::ToppingRepo()
     //ctor
 }
 
-void ToppingRepo::save(Toppings& toppings){
+void ToppingRepo::save(Toppings& toppings) {
 
     ofstream fout;
     fout.open("toppings.txt", ios::app);
@@ -15,7 +15,7 @@ void ToppingRepo::save(Toppings& toppings){
     fout.close();
 }
 
-void ToppingRepo::print(){
+void ToppingRepo::print() {
 
     ifstream fin;
     string str;

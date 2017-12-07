@@ -5,33 +5,31 @@ WorkplacesRepo::WorkplacesRepo()
     //ctor
 }
 
-void WorkplacesRepo::save(workplaces& workplaces)
-{
-    //string name = "";
+void WorkplacesRepo::save(workplaces& workplaces) {
+
     ofstream fout;
     fout.open("workplaces.txt", ios::app);
-    if(fout.is_open()){
+    if(fout.is_open()) {
         fout << workplaces.get_name() << endl;
     }
     fout.close();
 }
 
-void WorkplacesRepo::print()
-{
+void WorkplacesRepo::print(){
+
     ifstream fin;
     string str;
     fin.open("workplaces.txt");
 
-    if (fin.is_open()){
-            while (!fin.eof()){
+    if (fin.is_open()) {
+            while (!fin.eof()) {
                 getline(fin,str);
                 cout << str << endl;
             }
 
         fin.close();
     }
-    else
-    {
+    else {
         cout << "can not write in file, file is closed" << endl;
     }
 }
@@ -50,14 +48,16 @@ void WorkplacesRepo::print_line(int line_no){ // Prentar uppgefna línu eftir lín
                 cout << str << endl;
             }
         }
-                fin.close();
+    fin.close();
     }
-    else cout << "Unable to open file.";
+    else {
+        cout << "Unable to open file.";
+    }
 
 }
 
-int WorkplacesRepo::number_locations()
-{
+int WorkplacesRepo::number_locations() {
+
     ifstream fin;
     string str;
     // open file to search

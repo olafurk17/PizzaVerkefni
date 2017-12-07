@@ -8,7 +8,7 @@ ManagementUI::ManagementUI()
 void ManagementUI::mainMenu(){
     bool running = true;
     char selection;
-    while (running == true){
+    while (running == true) {
         cout << endl << "  -MANAGEMENT-" << endl << endl;
         cout << "t : Register Toppings" << endl;
         cout << "m : Register Menu items" << endl;
@@ -19,7 +19,7 @@ void ManagementUI::mainMenu(){
 
         cin >> selection;
 
-        if(selection == 't'){
+        if(selection == 't') {
             clear_screen();
 
             Toppings toppings;
@@ -27,25 +27,25 @@ void ManagementUI::mainMenu(){
             clear_screen();
 
         }
-        else if(selection == 'm'){
+        else if(selection == 'm') {
             clear_screen();
             PizzaMenu pizza;
             pizza.startRegester(pizza);
 
         }
-        else if(selection == 's'){
+        else if(selection == 's') {
             clear_screen();
 
         }
-        else if(selection == 'p'){
+        else if(selection == 'p') {
             clear_screen();
 
         }
-        else if(selection == 'l'){
+        else if(selection == 'l') {
             clear_screen();
             register_location();
         }
-        else if(selection == 'r'){
+        else if(selection == 'r') {
             clear_screen();
             running = false;
 
@@ -53,8 +53,7 @@ void ManagementUI::mainMenu(){
     }
 }
 
-void ManagementUI::register_location()
-{
+void ManagementUI::register_location() {
     char input = 'y';
 
     while (input == 'y'|| input == 'Y')
@@ -72,11 +71,10 @@ void ManagementUI::register_location()
 
 void ManagementUI::register_toppings() {
 
-    // toppings = "";
     Toppings topp;
     char input = 'y';
 
-    while (input == 'y'|| input == 'Y'){
+    while (input == 'y'|| input == 'Y') {
         ToppingRepo toppingRepo;
         cout << "Type the name of the topping: ";
         cin >> topp;
@@ -88,7 +86,7 @@ void ManagementUI::register_toppings() {
     }
 }
 
-void ManagementUI::clear_screen(){
+void ManagementUI::clear_screen() {
 
     for(int i = 0; i < 30; i++){
         cout << endl;

@@ -1,34 +1,34 @@
-#include "PizzaMenu.h"
+#include "../../include/models/PizzaMenu.h"
 #include <string>
 #include <istream>
 #include <iostream>
 #include <fstream>
-#include "toppings.h"
+#include "../../include/models/Toppings.h"
 #include <vector>
 
 //Klasi sem gerir starfsmanni kleift að búa til pizzur fyrir matseðil.
 
-PizzaMenu::PizzaMenu(){
+PizzaMenu::PizzaMenu() {
 
     int toppingCnt = 0;
     string name = "";
     int price = 0;
 }
 
-ostream& operator <<(ostream& out, PizzaMenu& pizza){
+ostream& operator <<(ostream& out, PizzaMenu& pizza) {
 
 
     return out;
 }
 
-istream& operator >>(istream& in, PizzaMenu& pizza){
+istream& operator >>(istream& in, PizzaMenu& pizza) {
 
     return in;
 
 }
 
 
-void PizzaMenu::print(){
+void PizzaMenu::print() {
 
     ifstream fin;
     string str;
@@ -50,7 +50,8 @@ void PizzaMenu::print(){
 
 
 
-void PizzaMenu::save(){
+void PizzaMenu::save() {
+
  ofstream fout;
     fout.open("Pizza-Menu.txt", ios::app);
     if(fout.is_open()){
@@ -60,7 +61,6 @@ void PizzaMenu::save(){
             fout << pizzaToppings[i];
         }
         fout << price << endl;
-
     }
     fout.close();
 
@@ -72,8 +72,6 @@ void PizzaMenu::startRegester(PizzaMenu& pizza) {
 
     while (input == 'y'|| input == 'Y')
     {
-
-
         cout << "Name of the pizza? ";
         cin >> name;
         cout << "How many toppings are on " << name << " ? ";
@@ -102,8 +100,8 @@ void PizzaMenu::menu() {
 
 }
 
-int PizzaMenu::number_locations()
-{
+int PizzaMenu::number_locations() {
+
     ifstream fin;
     string str;
     // open file to search

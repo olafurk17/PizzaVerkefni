@@ -12,11 +12,11 @@ class Other
         Other(string soda, string bread, string dessert);
         void saveSoda();
         void saveBread();
-        void saveDesert();
+        void saveDessert();
         void startRegester(Other& other);
         void printSoda();
         void printBread();
-        void printDesert();
+        void printDessert();
 
         friend ostream& operator << (ostream& out, Other& other);
         friend istream& operator >> (istream& in, Other& other);

@@ -1,4 +1,4 @@
-#include "Other.h"
+#include "../../include/models/Other.h"
 
 Other::Other()
 {
@@ -8,8 +8,8 @@ Other::Other()
 }
 
 
-void Other::saveSoda()
-{
+void Other::saveSoda() {
+
     ofstream fout;
     fout.open("Soda.txt", ios::app);
     if(fout.is_open()) {
@@ -18,8 +18,8 @@ void Other::saveSoda()
     fout.close();
 }
 
-void Other::saveBread()
-{
+void Other::saveBread() {
+
     ofstream fout;
     fout.open("Bread.txt", ios::app);
     if(fout.is_open()) {
@@ -27,8 +27,9 @@ void Other::saveBread()
     }
     fout.close();
 }
-void Other::saveDesert()
-{
+
+void Other::saveDessert() {
+
     ofstream fout;
     fout.open("Desert.txt", ios::app);
     if(fout.is_open()) {
@@ -36,8 +37,9 @@ void Other::saveDesert()
     }
     fout.close();
 }
-void Other::printSoda()
-{
+
+void Other::printSoda() {
+
     ifstream fin;
     string str;
     fin.open("Soda.txt");
@@ -54,8 +56,8 @@ void Other::printSoda()
     }
 }
 
-void Other::printBread()
-{
+void Other::printBread() {
+
     ifstream fin;
     string str;
     fin.open("Bread.txt");
@@ -72,11 +74,10 @@ void Other::printBread()
     }
 }
 
-void Other::printDesert()
-{
+void Other::printDessert() {
     ifstream fin;
     string str;
-    fin.open("Desert.txt");
+    fin.open("Dessert.txt");
 
     if(fin.is_open()) {
         while (!fin.eof()) {
@@ -90,16 +91,16 @@ void Other::printDesert()
     }
 }
 
-ostream& operator << (ostream& out, Other& other)
-{
+ostream& operator << (ostream& out, Other& other) {
+
     out << other.soda << " " << other.bread;
     out << " " << other.dessert << endl;
 
     return out;
 }
 
-istream& operator >> (istream& in, Other& other)
-{
+istream& operator >> (istream& in, Other& other) {
+
     char answer = ' ';
 
     while(answer != 'N' || answer != 'n') {
@@ -117,16 +118,15 @@ istream& operator >> (istream& in, Other& other)
     return in;
 }
 
-void Other::startRegester(Other& other){
+void Other::startRegester(Other& other) {
 
     char input;
 
     do {
-
-    cout << "What would you like to regester?" << endl << endl;
-    cout << "s : Soda" << endl;
-    cout << "b : Bread " << endl;
-    cout << "d : Desserts" << endl;
+        cout << "What would you like to regester?" << endl << endl;
+        cout << "s : Soda" << endl;
+        cout << "b : Bread " << endl;
+        cout << "d : Desserts" << endl;
 
     if (input == 's' || input == 'S'){
         char inputs;
@@ -162,7 +162,7 @@ void Other::startRegester(Other& other){
 
         cout << "Type in the name of the Desert";
         cin >> dessert;
-        saveDesert();
+        saveDessert();
 
         cout << "Do you want to regester more bread's on the menu 'y' for yes or 'n' for no: ";
         cin >> input;
@@ -173,7 +173,5 @@ void Other::startRegester(Other& other){
 
 }
     while (input == 's' || input == 'S');
-
-
 
 }

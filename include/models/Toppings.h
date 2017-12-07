@@ -1,6 +1,5 @@
 #ifndef TOPPINGS_H
 #define TOPPINGS_H
-//#include "ToppingRepo.h"
 #include <string>
 #include <istream>
 #include <iostream>
@@ -9,7 +8,6 @@
 using namespace std;
 
 // Class to regester toppings
-// Tók út price þar sem manegment er með sér flokk fyrir price
 class Toppings
 {
     public:
@@ -18,14 +16,11 @@ class Toppings
         string get_name();
         friend ostream& operator <<(ostream& out, Toppings& topping);
         friend istream& operator >>(istream& in, Toppings& topping);
-        //void save();
-        //void print();
         void startRegester(Toppings& toppings);
 
 
     private:
         string name;
-        //int price;
 
 };
 

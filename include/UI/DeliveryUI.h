@@ -16,7 +16,6 @@ class DeliveryUI
         void delivery();
         void clear_screen();
 
-
     private:
 };
 

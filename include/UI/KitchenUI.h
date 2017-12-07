@@ -17,7 +17,6 @@ class KitchenUI
         void kitchen();
         void clear_screen();
 
-
     private:
 };
 

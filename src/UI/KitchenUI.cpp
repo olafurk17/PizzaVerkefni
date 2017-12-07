@@ -5,7 +5,7 @@ KitchenUI::KitchenUI()
     //ctor
 }
 
-void KitchenUI::kitchen(){
+void KitchenUI::kitchen() {
 
     bool running = true;
     char selection;
@@ -47,11 +47,10 @@ void KitchenUI::kitchen(){
                 running = false;
             }
         }
-
     }
 }
 
-void KitchenUI::clear_screen(){
+void KitchenUI::clear_screen() {
 
     for(int i = 0; i < 30; i++){
         cout << endl;

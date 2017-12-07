@@ -1,9 +1,9 @@
-#include "MainUI.h"
+#include "../../include/UI/MainUI.h"
 #include <iostream>
 #include <string>
-#include "PizzaMenu.h"
-#include "Toppings.h"
-#include "workplaces.h"
+#include "../../include/models/PizzaMenu.h"
+#include "../../include/models/Toppings.h"
+#include "../../include/models/Workplaces.h"
 
 
 using namespace std;
@@ -27,29 +27,29 @@ void MainUI::main() {
 
         cin >> selection;
 
-        if(selection == 'm'){
+        if(selection == 'm') {
             clear_screen();
             mainM.mainMenu();
         }
-        else if(selection == 's'){
+        else if(selection == 's') {
             clear_screen();
             mainS.sales();
         }
-        else if(selection == 'k'){
+        else if(selection == 'k') {
             clear_screen();
             mainK.kitchen();
         }
-        else if(selection == 'd'){
+        else if(selection == 'd') {
             clear_screen();
             mainD.delivery();
         }
-        else if(selection == 'q'){
+        else if(selection == 'q') {
             running = false;
         }
      }
 }
 
-void MainUI::clear_screen(){
+void MainUI::clear_screen() {
 
     for(int i = 0; i < 30; i++){
         cout << endl;
