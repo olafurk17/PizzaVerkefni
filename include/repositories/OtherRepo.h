@@ -8,8 +8,8 @@ class OtherRepo
     public:
         OtherRepo();
         void saveSoda(Other& other);
-        void saveBread();
-        void saveDessert();
+        void saveBread(Other& other);
+        void saveDessert(Other& other);
         void printSoda();
         void printBread();
         void printDesert();

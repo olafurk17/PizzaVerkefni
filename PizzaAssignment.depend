@@ -280,7 +280,7 @@
 	<iostream>
 	<fstream>
 
-1512658087 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\other.h
+1512658884 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\other.h
 	<string>
 	<iostream>
 	<fstream>
@@ -365,7 +365,7 @@
 1512658096 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\other.cpp
 	"../../include/models/Other.h"
 
-1512658131 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
+1512658392 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
 	"../../include/UI/ManagementUI.h"
 
 1512656270 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\pizzamenuservice.h
@@ -388,16 +388,16 @@
 1512656207 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\pizzamenuservice.cpp
 	"PizzaMenuService.h"
 
-1512658343 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\otherrepo.cpp
+1512658598 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\otherrepo.cpp
 	"OtherRepo.h"
 
-1512658343 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\otherrepo.h
+1512658598 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\otherrepo.h
 	"../../include/models/Other.h"
 
-1512658368 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\otherservice.cpp
+1512658598 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\otherservice.cpp
 	"OtherService.h"
 
-1512658383 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\otherservice.h
+1512658598 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\otherservice.h
 	"OtherRepo.h"
 	"../models/Other.h"
 

@@ -134,7 +134,6 @@ void ManagementUI::registerOther(Other& other){
             cout << "Type in the name of the soda: ";
             cin >> str;
             Other other(str);
-            cout << other;
             otherservice.saveSoda(other);
 
             cout << "Do you want to regester more soda's on the menu 'y' for yes or 'n' for no: ";
@@ -151,8 +150,8 @@ void ManagementUI::registerOther(Other& other){
 
         cout << "Type in the name of the bread: ";
         cin >> str;
-        other.setbread(str);
-        otherservice.saveBread();
+        Other other(str);
+        otherservice.saveBread(other);
 
         cout << "Do you want to regester more bread's on the menu 'y' for yes or 'n' for no: ";
         cin >> input;
@@ -168,8 +167,8 @@ void ManagementUI::registerOther(Other& other){
 
         cout << "Type in the name of the Desert: ";
         cin >> str;
-        other.setdessert(str);
-        otherservice.saveDessert();
+        Other other(str);
+        otherservice.saveDessert(other);
 
         cout << "Do you want to regester more bread's on the menu 'y' for yes or 'n' for no: ";
         cin >> input;

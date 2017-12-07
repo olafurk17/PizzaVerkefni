@@ -10,13 +10,13 @@ void OtherService::saveSoda(Other& other){
     repo.saveSoda(other);
 }
 
-void OtherService::saveBread(){
+void OtherService::saveBread(Other& other){
 
-    repo.saveBread();
+    repo.saveBread(other);
 }
 
-void OtherService::saveDessert(){
+void OtherService::saveDessert(Other& other){
 
-    repo.saveDessert();
+    repo.saveDessert(other);
 }
 

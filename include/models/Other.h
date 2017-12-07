@@ -6,10 +6,13 @@
 using namespace std;
 
 class Other
+// bua til 2 klasa í viðbot
 {
     public:
         Other();
         Other(string soda);
+        Other(string bread);
+        Other(string dessert);
         Other(string soda, string bread, string dessert);
         void printSoda();
         void printBread();

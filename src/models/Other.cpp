@@ -10,6 +10,14 @@ Other::Other(string soda){
 this -> soda = soda;
 }
 
+Other::Other(,string bread,){
+this -> bread = bread;
+}
+
+Other::Other(string soda){
+this -> dessert = dessert;
+}
+
 
 
 string Other::setsoda(string str){

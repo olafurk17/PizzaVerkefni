@@ -15,7 +15,7 @@ void OtherRepo::saveSoda(Other& other)
     fout.close();
 }
 
-void OtherRepo::saveBread()
+void OtherRepo::saveBread(Other& other)
 {
     ofstream fout;
     fout.open("Bread.txt", ios::app);
@@ -24,7 +24,7 @@ void OtherRepo::saveBread()
     }
     fout.close();
 }
-void OtherRepo::saveDessert()
+void OtherRepo::saveDessert(Other& other)
 {
     ofstream fout;
     fout.open("Desert.txt", ios::app);
