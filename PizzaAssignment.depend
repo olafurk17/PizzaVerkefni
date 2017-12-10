@@ -265,7 +265,7 @@
 	<iostream>
 	<fstream>
 
-1512655079 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
+1512811016 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
 	<string>
 	<istream>
 	<iostream>
@@ -280,7 +280,7 @@
 	<iostream>
 	<fstream>
 
-1512658884 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\other.h
+1512809744 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\other.h
 	<string>
 	<iostream>
 	<fstream>
@@ -321,7 +321,7 @@
 	"../models/Workplaces.h"
 	"../models/Other.h"
 
-1512655671 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
+1512810984 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
 	"../../include/models/PizzaMenu.h"
 	<string>
 	<istream>
@@ -362,10 +362,10 @@
 1512480595 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\salesui.cpp
 	"SalesUI.h"
 
-1512658096 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\other.cpp
+1512809916 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\other.cpp
 	"../../include/models/Other.h"
 
-1512658392 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
+1512811190 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
 	"../../include/UI/ManagementUI.h"
 
 1512656270 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\pizzamenuservice.h

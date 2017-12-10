@@ -15,6 +15,12 @@ PizzaMenu::PizzaMenu(){
     int price = 0;
 }
 
+PizzaMenu::PizzaMenu(string name, int toppingCnt){
+    this -> name = name;
+    this -> toppingCnt = toppingCnt;
+
+}
+
 ostream& operator <<(ostream& out, PizzaMenu& pizza){
 
     return out;
