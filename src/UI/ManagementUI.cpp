@@ -51,13 +51,15 @@ void ManagementUI::mainMenu(){
 
 void ManagementUI::regesterPizza() {
 
-    char inpute = 'y';
+    char input = 'y';
     string name;
     int t;
 
-    while (inpute == 'y'|| inpute == 'Y')
+    while (input == 'y'|| input == 'Y')
     {   clear_screen();
         //PizzaMenu pizza;
+        cout << "Please enter the name and toppings for your pizza: " << endl << endl << endl << endl;
+
 
         cout << "Name of the pizza? ";
         cin >> name;
@@ -79,7 +81,7 @@ void ManagementUI::regesterPizza() {
            service.save(pizza);
 
         cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
-        cin >> inpute;
+        cin >> input;
         clear_screen();
 
     }
@@ -129,25 +131,25 @@ void ManagementUI::selectTopping()
 void ManagementUI::Menu(){
     char input;
     ManagementUI ui;
-    do{
+//    do{
         clear_screen();
-///        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
-///        cin >> input;
-///        if (input == 'P' || input == 'p'){
+//        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
+//        cin >> input;
+//        if (input == 'P' || input == 'p'){
                 regesterPizza();
-///        }
-/*        if (input == 'o'|| input == 'O'){
+/*        }
+        if (input == 'o'|| input == 'O'){
            Other other;
          ui.registerOther(other);
 
-        }*/
+        }
 
         cout << "Do you want to register more items on the menu? Type 'y' for yes or 'n' for no: " << endl;
         cin >> input;
         clear_screen();
         }
 
-        while (input == 'y' || input =='Y');
+        while (input == 'y' || input =='Y');*/
 }
 
 /*void ManagementUI::registerOther(Other& other){
@@ -234,7 +236,8 @@ void ManagementUI::registerLocation()
     }
 }
 
-void ManagementUI::clear_screen(){
+void ManagementUI::clear_screen()
+{
 
     for(int i = 0; i < 30; i++){
         cout << endl;
