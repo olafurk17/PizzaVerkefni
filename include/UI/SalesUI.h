@@ -17,6 +17,7 @@ class SalesUI
         SalesUI();
         void sales();
         void clear_screen();
+        void new_order();
 
     private:
 };

@@ -19,7 +19,7 @@ void SalesUI::sales(){
 
         if(selection == 'n'){
             clear_screen();
-
+            new_order();
         }
         else if(selection == 'v'){
             clear_screen();
@@ -42,4 +42,11 @@ void SalesUI::clear_screen(){
     for(int i = 0; i < 30; i++){
         cout << endl;
     }
+}
+
+void SalesUI::new_order()
+{
+
+    // Kalla í pizzuval til að velja pizzu í order
+
 }
