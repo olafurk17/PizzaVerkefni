@@ -32,6 +32,11 @@ void KitchenUI::kitchen(){
             phase = 2;
             clear_screen();
         }
+
+            else if(selection == 'r'){
+            clear_screen();
+            running = false;
+        }
         else if(phase == 2){
             cout << endl << "  -KITCHEN-" << endl << endl;
             // LIST ACTIVE ORDERS WITH MINIMAL INFO

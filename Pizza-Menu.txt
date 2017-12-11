@@ -1,2 +1,6 @@
 hawaii, 1700, skinka, ananas, 
 pepp, 1450, p, 
+k, 1450, k, 
+kk, 1450, k, 
+m, 1850, j, 
+jj, 2300, kk, ll, 

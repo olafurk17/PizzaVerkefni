@@ -47,4 +47,36 @@ void PizzaMenuService::print_line (int line_no){ // Prentar uppgefna línu eftir 
     else cout << "Unable to open file.";
 }
 
+int PizzaMenuService::finalPrice(PizzaMenu& pizza, int price){
+
+    int t = 0;
+    t = price + (pizza.gettoppingCnt() * pizza.gettoppingPrice());
+    return pizza.setprice(t);
+
+}
+
+int PizzaMenuService::sizePrice(char input){
+    if (input == '1'){
+
+        this -> priceS = 1200;
+        return priceS;
+
+    }
+    if (input == '2') {
+
+        this -> priceS = 1600;
+        return priceS;
+
+    }
+    if (input == '3'){
+
+        this -> priceS = 1800;
+        return priceS;
+
+    }
+
+
+
+}
+
 

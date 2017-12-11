@@ -12,8 +12,8 @@ void ManagementUI::mainMenu(){
         cout << endl << "  -MANAGEMENT-" << endl << endl;
         cout << "t : Register Toppings" << endl;
         cout << "m : Register Menu items" << endl;
-        cout << "s : Register Sizes" << endl;
-        cout << "p : Register Prices" << endl;
+        //cout << "s : Register Sizes" << endl;
+        //cout << "p : Register Prices" << endl;
         cout << "l : Register Locations" << endl;
         cout << "r : Return" << endl;
 
@@ -29,14 +29,14 @@ void ManagementUI::mainMenu(){
             Menu();
 
         }
-        else if(selection == 's'){
+       /* else if(selection == 's'){
             clear_screen();
 
         }
         else if(selection == 'p'){
             clear_screen();
 
-        }
+        }*/
         else if(selection == 'l'){
             clear_screen();
             registerLocation();
@@ -54,6 +54,8 @@ void ManagementUI::regesterPizza() {
     char inpute = 'y';
     string name;
     int t;
+    char s;
+
 
     while (inpute == 'y'|| inpute == 'Y')
     {   clear_screen();
@@ -61,10 +63,14 @@ void ManagementUI::regesterPizza() {
         cout << "Please register the name and toppings of the pizza." << endl << endl << endl;
         cout << "Name of the pizza? ";
         cin >> name;
-        //pizza.setname(str);
+        cout << "What is the size of the pizza? " << endl;
+        cout << "1 : 9 Inches" << endl;
+        cout << "2 : 12 Inches" << endl;
+        cout << "3 : 16 Inches" << endl;
+        cin >> s;
         cout << "How many toppings are on " << name << " ? ";
         cin >> t;
-        PizzaMenu pizza(name,t);
+        PizzaMenu pizza(name,t,s);
 
        // pizza.settoppingCnt(t);
         cout << "What toppings are on " << name << " ? ";
@@ -75,7 +81,7 @@ void ManagementUI::regesterPizza() {
 
             pizza.pizzaToppings.push_back(str);
         }
-        pizza.finalPrice();
+        service.finalPrice(pizza, service.sizePrice(s));
 
            service.save(pizza);
 

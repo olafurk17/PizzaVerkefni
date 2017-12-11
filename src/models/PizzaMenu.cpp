@@ -15,7 +15,7 @@ PizzaMenu::PizzaMenu(){
     int price = 0;
 }
 
-PizzaMenu::PizzaMenu(string name, int toppingCnt){
+PizzaMenu::PizzaMenu(string name, int toppingCnt, char s){
     this -> name = name;
     this -> toppingCnt = toppingCnt;
     int price = 0;
@@ -59,6 +59,12 @@ int PizzaMenu::getprice(){
     return price;
 }
 
+int PizzaMenu::gettoppingPrice(){
+
+    this -> toppingPrice = 250;
+    return toppingPrice;
+}
+
 
 string PizzaMenu::setname(string str) {
 
@@ -77,9 +83,3 @@ int PizzaMenu::setprice(int p){
     this -> price = p;
 }
 
-int PizzaMenu::finalPrice(){
-
-    price = basePrice + (toppingCnt * toppingPrice);
-    return price;
-
-}
