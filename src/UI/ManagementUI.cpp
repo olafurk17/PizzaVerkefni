@@ -62,13 +62,22 @@ void ManagementUI::regesterPizza(PizzaMenu& pizza) {
         cout << "Name of the pizza? ";
         cin >> str;
         //pizza.setname(str);
-
-        PizzaMenu pizza(str);
+        cout << "How many toppings are on " << pizza.getname() << " ? ";
+        cin >> t;
+        PizzaMenu pizza(str,t);
        // pizza.settoppingCnt(t);
+        cout << "What toppings are on " << pizza.getname() << " ? ";
+        for (int i = 0; i < pizza.gettoppingCnt(); i++)
+        {
+            string str;
+            cin >> str;
+
+            pizza.pizzaToppings.push_back(str);
+        }
 
            service.save(pizza);
 
-        cout << "Do you want to register more pizza's on the menu 'y' for yes or 'n' for no: ";
+        cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
         cin >> inpute;
         clear_screen();
 
