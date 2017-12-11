@@ -41,22 +41,22 @@ int Order::get_status()
     return this->status;
 }
 
-int get_pizza_no()
+int Order::get_pizza_no()
 {
     return this->pizza_no;
 }
 
-int get_loc_no()
+int Order::get_loc_no()
 {
     return this->loc_no;
 }
 
-void set_pizza_no(int pizza_no)
+void Order::set_pizza_no(int pizza_no)
 {
     this->pizza_no = pizza_no;
 }
 
-void set_loc_no(int loc_no)
+void Order::set_loc_no(int loc_no)
 {
     this->loc_no = loc_no;
 }
@@ -84,12 +84,12 @@ void Order::status_advance()
 
 ostream& operator << (ostream& out, Order& order)
 {
-    out << order.pizza << order.loc << order.paid << "," << order.delivery << "," << order.price << "," << order.status << ",";
+    out << order.pizza_no << order.loc_no << order.paid << "," << order.delivery << "," << order.price << "," << order.status << ",";
     return out;
 }
 
 istream& operator >> (istream& in, Order& order)
 {
-    in >> order.pizza >> order.loc >> order.paid >> order.delivery >> order.price >> order.status;
+    in >> order.pizza_no >> order.loc_no >> order.paid >> order.delivery >> order.price >> order.status;
     return in;
 }

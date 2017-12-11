@@ -10,6 +10,7 @@ class OrderService
     public:
         OrderService();
         void write(Order& order);
+        int price(Order& order);
 
     private:
         OrderRepo repo;

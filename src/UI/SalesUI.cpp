@@ -80,8 +80,8 @@ void SalesUI::new_order()
         bool paid = false;
     }
     // Búa til order ( Order order() ) með öllu inniföldu
-    Order order(pizza, loc, paid, delivery, price);
-    order_service.write(order);
+    ///Order order(pizza, loc, paid, delivery, price);
+    ///order_service.write(order);
     // Senda order niður í Service klasa sem sendir í Repo og skrifar í skjal.
 
 

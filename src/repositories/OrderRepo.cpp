@@ -28,7 +28,7 @@ void read(vector<Order>& order_vector)
     }*/
 }
 
-void write(Order& order)
+void OrderRepo::write(Order& order)
 {
     ofstream fout;
     fout.open("activeorders.txt", ios::app);
