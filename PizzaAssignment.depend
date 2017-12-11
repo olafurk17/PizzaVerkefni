@@ -291,7 +291,7 @@
 
 1512992795 c:\users\lenovo\documents\github\pizzaverkefni\include\models\other.h
 
-1512993811 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
+1512994677 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
 	<string>
 	<istream>
 	<iostream>
@@ -352,7 +352,7 @@
 
 1512993624 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\other.cpp
 
-1512993822 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
+1512995710 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
 	"../../include/models/PizzaMenu.h"
 	<string>
 	<istream>
@@ -441,7 +441,7 @@
 
 1512992330 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\mainui.cpp
 
-1512993624 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
+1512995019 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
 	"../../include/UI/ManagementUI.h"
 
 1512992140 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\salesui.cpp

@@ -75,6 +75,7 @@ void ManagementUI::regesterPizza() {
 
             pizza.pizzaToppings.push_back(str);
         }
+        pizza.finalPrice();
 
            service.save(pizza);
 
