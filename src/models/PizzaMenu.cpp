@@ -22,6 +22,12 @@ PizzaMenu::PizzaMenu(string name, int toppingCnt){
 }
 
 ostream& operator <<(ostream& out, PizzaMenu& pizza){
+    out << pizza.name << ", " << pizza.price << ", ";
+    for (int i = 0; i < pizza.gettoppingCnt(); i++)
+        {
+            out << pizza.pizzaToppings[i] << ", ";
+        }
+    out << endl;
 
     return out;
 }
