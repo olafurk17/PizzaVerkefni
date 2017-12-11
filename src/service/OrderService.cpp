@@ -5,12 +5,13 @@ OrderService::OrderService()
     //ctor
 }
 
-void OrderService::write(Order& order)
-{
+void OrderService::write(Order& order){
     repo.write(order);
 }
 
 int OrderService::price(Order& order){
-    return 1;
+    int p = 0;
+    ///p = pizza1 + pizza2;
+    return order.set_price(p);
 
 }
