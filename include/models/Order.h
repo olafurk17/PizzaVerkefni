@@ -13,7 +13,7 @@ class Order
 {
     public:
         Order();
-        Order(PizzaMenu& pizza, Workplaces& loc, bool paid, bool delivery, int price);
+        Order(PizzaMenu& pizza, workplaces& loc, bool paid, bool delivery, int price);
         bool get_paid();
         bool get_delivery();
         int get_price();
@@ -27,7 +27,7 @@ class Order
 
     private:
         PizzaMenu pizza;
-        Workplaces loc;
+        workplaces loc;
         bool paid;
         bool delivery;
         int price;

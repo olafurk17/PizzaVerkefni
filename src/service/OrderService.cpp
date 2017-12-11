@@ -5,7 +5,7 @@ OrderService::OrderService()
     //ctor
 }
 
-OrderService::~OrderService()
+void OrderService::write(Order& order)
 {
-    //dtor
+    repo.write(order);
 }

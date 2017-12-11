@@ -9,7 +9,7 @@ Order::Order()
     status = 0;
 }
 
-Order::Order(PizzaMenu& pizza, Workplaces& loc, bool paid, bool delivery, int price)
+Order::Order(PizzaMenu& pizza, workplaces& loc, bool paid, bool delivery, int price)
 {
     this-> pizza = pizza;
     this-> loc = loc;
@@ -62,7 +62,7 @@ void Order::status_advance()
 
 ostream& operator << (ostream& out, Order& order)
 {
-    out << order.pizza << order.loc << "," << order.paid << "," << order.delivery << "," << order.price << "," << << "," order.status << "," ;
+    out << order.pizza << order.loc << order.paid << "," << order.delivery << "," << order.price << "," << order.status << ",";
     return out;
 }
 
