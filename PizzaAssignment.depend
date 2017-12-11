@@ -9,11 +9,13 @@
 	"KitchenUI.h"
 	"DeliveryUI.h"
 
-1512987194 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\ui\managementui.h
+1512991892 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\ui\managementui.h
 	<iostream>
+	<string>
 	"../models/Workplaces.h"
 	"../models/Toppings.h"
 	"../models/Other.h"
+	"../models/PizzaMenu.h"
 	"../service/PizzaMenuService.h"
 	"../service/OtherService.h"
 	"../service/ToppingService.h"
@@ -41,7 +43,7 @@
 	"../models/Workplaces.h"
 	"../models/Other.h"
 
-1512986136 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\models\pizzamenu.h
+1512992046 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\models\pizzamenu.h
 	<string>
 	<istream>
 	<iostream>
@@ -74,15 +76,16 @@
 1512982798 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\models\other.cpp
 	"../../include/models/Other.h"
 
-1512986136 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\models\pizzamenu.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\models\pizzamenu.cpp
 	"../../include/models/PizzaMenu.h"
 	<string>
 	<istream>
 	<iostream>
+	<fstream>
 	"../../include/models/Toppings.h"
 	<vector>
 
-1512988248 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\models\toppings.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\models\toppings.cpp
 	"../../include/models/Toppings.h"
 
 1512982798 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\models\workplaces.cpp
@@ -103,10 +106,10 @@
 	<vector>
 	"../models/PizzaMenu.h"
 
-1512988369 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\repositories\toppingrepo.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\repositories\toppingrepo.cpp
 	"ToppingRepo.h"
 
-1512988369 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\repositories\toppingrepo.h
+1512991432 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\repositories\toppingrepo.h
 	<string>
 	<iostream>
 	<fstream>
@@ -116,22 +119,22 @@
 1512982798 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\repositories\workplacesrepo.cpp
 	"WorkplacesRepo.h"
 
-1512985469 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\otherservice.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\otherservice.cpp
 	"../../include/service/OtherService.h"
 
-1512985478 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\pizzamenuservice.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\pizzamenuservice.cpp
 	"../../include/service/PizzaMenuService.h"
 
-1512985488 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\price.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\price.cpp
 	"../../include/service/Price.h"
 
-1512985497 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\deliveryui.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\deliveryui.cpp
 	"../../include/UI/DeliveryUI.h"
 
 1512982798 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\kitchenui.cpp
 	"../../include/UI/KitchenUI.h"
 
-1512985522 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\mainui.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\mainui.cpp
 	"../../include/UI/MainUI.h"
 	<iostream>
 	<string>
@@ -139,10 +142,10 @@
 	"../../include/models/Toppings.h"
 	"../../include/models/Workplaces.h"
 
-1512988015 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\managementui.cpp
+1512991798 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\managementui.cpp
 	"../../include/UI/ManagementUI.h"
 
-1512985531 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\salesui.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\ui\salesui.cpp
 	"../../include/UI/SalesUI.h"
 
 1512982798 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\service\pizzamenuservice.h
@@ -157,11 +160,11 @@
 	<fstream>
 	<string>
 
-1512988369 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\service\toppingservice.h
+1512991432 c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\include\service\toppingservice.h
 	<vector>
 	"../models/Toppings.h"
 	"../repositories/ToppingRepo.h"
 
-1512988377 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\toppingservice.cpp
+1512991432 source:c:\users\oli\documents\hr\verk1\pizza\pizzaverkefni\src\service\toppingservice.cpp
 	"ToppingService.h"
 

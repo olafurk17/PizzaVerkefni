@@ -49,25 +49,26 @@ void ManagementUI::mainMenu(){
     }
 }
 
-void ManagementUI::regesterPizza(PizzaMenu& pizza) {
+void ManagementUI::regesterPizza() {
 
     char inpute = 'y';
-    string str;
-    int t, p;
+    string name;
+    int t;
 
     while (inpute == 'y'|| inpute == 'Y')
     {   clear_screen();
         //PizzaMenu pizza;
 
         cout << "Name of the pizza? ";
-        cin >> str;
+        cin >> name;
         //pizza.setname(str);
-        cout << "How many toppings are on " << pizza.getname() << " ? ";
+        cout << "How many toppings are on " << name << " ? ";
         cin >> t;
-        PizzaMenu pizza(str,t);
+        PizzaMenu pizza(name,t);
+
        // pizza.settoppingCnt(t);
-        cout << "What toppings are on " << pizza.getname() << " ? ";
-        for (int i = 0; i < pizza.gettoppingCnt(); i++)
+        cout << "What toppings are on " << name << " ? ";
+        for (int i = 0; i < t; i++)
         {
             string str;
             cin >> str;
@@ -113,8 +114,8 @@ void ManagementUI::registerTopping()
 
 void ManagementUI::selectTopping()
 {
-    char input = 'y'
-    while(input = 'y' || input = 'Y')
+    char input = 'y';
+    while((input = 'y') || (input = 'Y'))
     {
         vector<Toppings> toppingVector;
         toppingservice.read(toppingVector);
@@ -133,8 +134,7 @@ void ManagementUI::Menu(){
         cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
         cin >> input;
         if (input == 'P' || input == 'p'){
-                PizzaMenu pizza;
-                ui.regesterPizza(pizza);
+                regesterPizza();
         }
         if (input == 'o'|| input == 'O'){
             Other other;
