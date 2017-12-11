@@ -1,11 +1,10 @@
 #ifndef TOPPINGREPO_H
 #define TOPPINGREPO_H
 #include <string>
-#include <istream>
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include "../models/Toppings.h"
-#include "../models/Workplaces.h"
 
 using namespace std;
 
@@ -13,12 +12,10 @@ class ToppingRepo
 {
     public:
         ToppingRepo();
-        void save(Toppings& toppings);
-        void print();
+        void write(Toppings& toppings);
+        void read(vector<Toppings>& toppingVector);
 
     private:
-        workplaces work;
-//        Toppings toppings("h");
 
 };
 

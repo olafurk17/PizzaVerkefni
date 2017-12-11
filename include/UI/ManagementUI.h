@@ -5,8 +5,9 @@
 #include "../models/Workplaces.h"
 #include "../models/Toppings.h"
 #include "../models/Other.h"
-#include "PizzaMenuService.h"
-#include "OtherService.h"
+#include "../service/PizzaMenuService.h"
+#include "../service/OtherService.h"
+#include "../service/ToppingService.h"
 
 
 
@@ -21,6 +22,8 @@ class ManagementUI
         void clear_screen();
         void registerLocation();
         void regesterPizza(PizzaMenu& pizza);
+        void registerTopping();
+        void selectTopping();
         void Menu();
         void registerOther(Other& other);
 
@@ -28,6 +31,7 @@ class ManagementUI
         PizzaMenu menu;
         PizzaMenuService service;
         OtherService otherservice;
+        ToppingService toppingservice;
 };
 
 #endif // MANAGMENTUI_H

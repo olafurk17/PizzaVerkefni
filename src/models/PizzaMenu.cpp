@@ -2,7 +2,6 @@
 #include <string>
 #include <istream>
 #include <iostream>
-#include <fstream>
 #include "../../include/models/Toppings.h"
 #include <vector>
 
@@ -10,24 +9,21 @@
 
 PizzaMenu::PizzaMenu(){
 
-    int toppingCnt = 0;
     string name = "";
-    int price = 0;
 }
 
-PizzaMenu::PizzaMenu(string name, int toppingCnt){
+PizzaMenu::PizzaMenu(string name){
     this -> name = name;
-    this -> toppingCnt = toppingCnt;
 
 }
 
 ostream& operator <<(ostream& out, PizzaMenu& pizza){
-
+    out << pizza.name;
     return out;
 }
 
 istream& operator >>(istream& in, PizzaMenu& pizza){
-
+    in >> pizza.name;
     return in;
 
 }
@@ -39,35 +35,9 @@ return name;
 
 }
 
-int PizzaMenu::gettoppingCnt(){
-
-    this -> toppingCnt = toppingCnt;
-    return toppingCnt;
-}
-
-
-int PizzaMenu::getprice(){
-
-    this -> price = price;
-    return price;
-}
-
-
 string PizzaMenu::setname(string str) {
 
     this -> name = str;
 
 }
-
-int PizzaMenu::settoppingCnt(int t){
-
-   this -> toppingCnt = t;
-}
-
-
-int PizzaMenu::setprice(int p){
-
-    this -> price = p;
-}
-
 

@@ -21,10 +21,7 @@ void ManagementUI::mainMenu(){
 
         if(selection == 't'){
             clear_screen();
-
-           // Toppings toppings;
-            //toppings.startRegester(toppings);
-            //clear_screen();
+            registerTopping();
 
         }
         else if(selection == 'm'){
@@ -65,27 +62,58 @@ void ManagementUI::regesterPizza(PizzaMenu& pizza) {
         cout << "Name of the pizza? ";
         cin >> str;
         //pizza.setname(str);
-        cout << "How many toppings are on " << pizza.getname() << " ? ";
-        cin >> t;
-        PizzaMenu pizza(str,t);
-       // pizza.settoppingCnt(t);
-        cout << "What toppings are on " << pizza.getname() << " ? ";
-        for (int i = 0; i < pizza.gettoppingCnt(); i++)
-        {
-            string str;
-            cin >> str;
 
-            pizza.pizzaToppings.push_back(str);
-        }
+        PizzaMenu pizza(str);
+       // pizza.settoppingCnt(t);
 
            service.save(pizza);
 
-        cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
+        cout << "Do you want to register more pizza's on the menu 'y' for yes or 'n' for no: ";
         cin >> inpute;
         clear_screen();
 
     }
 
+}
+
+void ManagementUI::registerTopping()
+{
+
+    char inpute = 'y';
+    string str;
+
+
+    while (inpute == 'y'|| inpute == 'Y')
+    {
+        clear_screen();
+
+        cout << "Name of the topping? ";
+        cin >> str;
+
+        Toppings topping(str);
+
+        toppingservice.write(topping);
+
+
+        cout << "Do you want to register more toppings on the menu 'y' for yes or 'n' for no: ";
+        cin >> inpute;
+        clear_screen();
+
+    }
+}
+
+void ManagementUI::selectTopping()
+{
+    char input = 'y'
+    while(input = 'y' || input = 'Y')
+    {
+        vector<Toppings> toppingVector;
+        toppingservice.read(toppingVector);
+        for (int i = 0; i < toppingVector.size(); i++)
+        {
+            cout << i+1 << " - " << toppingVector[i].get_name() << endl;
+        }
+    }
 }
 
 void ManagementUI::Menu(){
