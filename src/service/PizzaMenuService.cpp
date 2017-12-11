@@ -5,8 +5,12 @@ PizzaMenuService::PizzaMenuService(){
     //ctor
 }
 
-void PizzaMenuService::save(PizzaMenu& menu){
-    repo.save(menu);
+void PizzaMenuService::write(PizzaMenu& menu){
+    repo.write(menu);
+
+}
+void PizzaMenuService::read(vector<PizzaMenu>& pizzaMenuVector){
+    repo.read(pizzaMenuVector);
 
 }
 

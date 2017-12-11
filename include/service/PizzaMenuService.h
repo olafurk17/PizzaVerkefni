@@ -9,9 +9,10 @@ class PizzaMenuService
         PizzaMenuService();
         int number_locations();
         void print_line (int line_no);
-        void save(PizzaMenu& pizza);
+        void write(PizzaMenu& pizza);
         int finalPrice(PizzaMenu& pizza, int price);
         int sizePrice(char input);
+        void read(vector<PizzaMenu>& pizzaMenuVector);
 
     private:
         PizzaMenuRepo repo;

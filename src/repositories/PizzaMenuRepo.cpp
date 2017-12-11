@@ -3,7 +3,7 @@
 PizzaMenuRepo::PizzaMenuRepo(){
     //ctor
 }
-void PizzaMenuRepo::print(){
+void PizzaMenuRepo::read(vector<PizzaMenu>& pizzaMenuVector){
 
     ifstream fin;
     string str;
@@ -12,10 +12,12 @@ void PizzaMenuRepo::print(){
     if (fin.is_open()){
             while (!fin.eof()){
                 getline(fin,str);
-                cout << str << endl;
+                PizzaMenu menu(str);
+                pizzaMenuVector.push_back(menu);
             }
 
         fin.close();
+        pizzaMenuVector.pop_back();
     }
     else{
 
@@ -23,7 +25,7 @@ void PizzaMenuRepo::print(){
     }
 }
 
-void PizzaMenuRepo::save(PizzaMenu& menu){
+void PizzaMenuRepo::write(PizzaMenu& menu){
  ofstream fout;
     fout.open("Pizza-Menu.txt", ios::app);
     if(fout.is_open()){

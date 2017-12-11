@@ -15,6 +15,12 @@ PizzaMenu::PizzaMenu(){
     int price = 0;
 }
 
+PizzaMenu::PizzaMenu(string name){
+
+    this -> name = name;
+
+}
+
 PizzaMenu::PizzaMenu(string name, int toppingCnt, char s){
     this -> name = name;
     this -> toppingCnt = toppingCnt;

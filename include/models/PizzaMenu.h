@@ -16,6 +16,7 @@ class PizzaMenu
 {
     public:
         PizzaMenu();
+        PizzaMenu(string str);
         PizzaMenu(string name,  int toppingCnt, char s);
         friend ostream& operator <<(ostream& out, PizzaMenu& pizza);
         friend istream& operator >>(istream& in, PizzaMenu& pizza);

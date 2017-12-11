@@ -83,7 +83,9 @@ void ManagementUI::regesterPizza() {
         }
         service.finalPrice(pizza, service.sizePrice(s));
 
-           service.save(pizza);
+           service.write(pizza);
+           vector <PizzaMenu> pizzavector;
+           service.read(pizzavector);
 
         cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
         cin >> inpute;
