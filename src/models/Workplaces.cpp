@@ -14,7 +14,7 @@ string workplaces::get_name() {
 }
 
 ostream& operator <<(ostream& out, workplaces& workplace){
-    out << workplace.name << endl;
+    out << workplace.name << ",";
 
     return out;
 }

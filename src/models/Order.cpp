@@ -62,7 +62,7 @@ void Order::status_advance()
 
 ostream& operator << (ostream& out, Order& order)
 {
-    out << order.pizza << order.loc << order.paid << order.delivery << order.price << order.status;
+    out << order.pizza << order.loc << "," << order.paid << "," << order.delivery << "," << order.price << "," << << "," order.status << "," ;
     return out;
 }
 
