@@ -58,7 +58,7 @@ void ManagementUI::regesterPizza() {
     while (inpute == 'y'|| inpute == 'Y')
     {   clear_screen();
         //PizzaMenu pizza;
-
+        cout << "Please register the name and toppings of the pizza." << endl << endl << endl;
         cout << "Name of the pizza? ";
         cin >> name;
         //pizza.setname(str);
@@ -132,20 +132,20 @@ void ManagementUI::Menu(){
     ManagementUI ui;
     do{
         clear_screen();
-///        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
-///        cin >> input;
-///        if (input == 'P' || input == 'p'){
+//        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
+//        cin >> input;
+//        if (input == 'P' || input == 'p'){
                 regesterPizza();
-///        }
+//        }
 /*        if (input == 'o'|| input == 'O'){
            Other other;
          ui.registerOther(other);
 
-        }*/
+        }
 
         cout << "Do you want to register more items on the menu? Type 'y' for yes or 'n' for no: " << endl;
         cin >> input;
-        clear_screen();
+        clear_screen();*/
         }
 
         while (input == 'y' || input =='Y');
