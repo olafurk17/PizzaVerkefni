@@ -69,5 +69,3 @@ int PizzaMenu::setprice(int p){
 
     this -> price = p;
 }
-
-

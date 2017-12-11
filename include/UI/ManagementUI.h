@@ -1,12 +1,15 @@
 #ifndef MANAGEMENTUI_H
 #define MANAGEMENTUI_H
 #include <iostream>
+#include <string>
 
 #include "../models/Workplaces.h"
 #include "../models/Toppings.h"
 #include "../models/Other.h"
-#include "PizzaMenuService.h"
-#include "OtherService.h"
+#include "../models/PizzaMenu.h"
+#include "../service/PizzaMenuService.h"
+#include "../service/OtherService.h"
+#include "../service/ToppingService.h"
 
 
 
@@ -20,14 +23,16 @@ class ManagementUI
         void mainMenu();
         void clear_screen();
         void registerLocation();
-        void regesterPizza(PizzaMenu& pizza);
+        void regesterPizza();
+        void registerTopping();
+        void selectTopping();
         void Menu();
         void registerOther(Other& other);
 
     private:
-        PizzaMenu menu;
         PizzaMenuService service;
         OtherService otherservice;
+        ToppingService toppingservice;
 };
 
 #endif // MANAGMENTUI_H

@@ -5,17 +5,17 @@ ToppingRepo::ToppingRepo()
     //ctor
 }
 
-void ToppingRepo::save(Toppings& toppings){
+void ToppingRepo::write(Toppings& toppings){
 
     ofstream fout;
     fout.open("toppings.txt", ios::app);
     if(fout.is_open()){
-        fout << toppings << endl;
+        fout << toppings << ",";
     }
     fout.close();
 }
 
-void ToppingRepo::print(){
+void ToppingRepo::read(vector<Toppings>& toppingVector){
 
     ifstream fin;
     string str;
@@ -24,11 +24,13 @@ void ToppingRepo::print(){
 
     if (fin.is_open()){
             while (!fin.eof()){
-                getline(fin,str);
-                cout << str << endl;
+                getline(fin,str, ',');
+                Toppings topping(str);
+                toppingVector.push_back(topping);
             }
 
         fin.close();
+        toppingVector.pop_back();
     }
     else{
 

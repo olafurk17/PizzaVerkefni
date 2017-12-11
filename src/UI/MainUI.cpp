@@ -1,9 +1,9 @@
-#include "MainUI.h"
+#include "../../include/UI/MainUI.h"
 #include <iostream>
 #include <string>
-#include "PizzaMenu.h"
-#include "Toppings.h"
-#include "workplaces.h"
+#include "../../include/models/PizzaMenu.h"
+#include "../../include/models/Toppings.h"
+#include "../../include/models/Workplaces.h"
 
 
 using namespace std;
