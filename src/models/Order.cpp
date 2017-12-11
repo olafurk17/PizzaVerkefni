@@ -3,16 +3,18 @@
 Order::Order()
 {
     //ctor
+    pizza_no = 0;
+    loc_no = 0;
     paid = false;
     delivery = false;
     price = 0;
     status = 0;
 }
 
-Order::Order(PizzaMenu& pizza, workplaces& loc, bool paid, bool delivery, int price)
+Order::Order(int pizza_no, int loc_no, bool paid, bool delivery, int price)
 {
-    this-> pizza = pizza;
-    this-> loc = loc;
+    this-> pizza_no = pizza_no;
+    this-> loc_no = loc_no;
     this-> paid = paid;
     this-> delivery = delivery;
     this-> price = price;
@@ -37,6 +39,26 @@ int Order::get_price()
 int Order::get_status()
 {
     return this->status;
+}
+
+int get_pizza_no()
+{
+    return this->pizza_no;
+}
+
+int get_loc_no()
+{
+    return this->loc_no;
+}
+
+void set_pizza_no(int pizza_no)
+{
+    this->pizza_no = pizza_no;
+}
+
+void set_loc_no(int loc_no)
+{
+    this->loc_no = loc_no;
 }
 
 void Order::set_paid(bool paid)
