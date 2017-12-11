@@ -1,4 +1,4 @@
-#include "KitchenUI.h"
+#include "../../include/UI/KitchenUI.h"
 
 KitchenUI::KitchenUI()
 {
@@ -14,7 +14,7 @@ void KitchenUI::kitchen(){
 
         if(phase == 1){
 
-            workplaces loc;
+            WorkplacesRepo loc;
             int number_loc = loc.number_locations();
 
             cout << endl << "   -SELECT WORKPLACE-" << endl << endl;

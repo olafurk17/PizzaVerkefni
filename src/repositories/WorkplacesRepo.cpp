@@ -1,41 +1,22 @@
-#include "../../include/models/Workplaces.h"
+#include "WorkplacesRepo.h"
 
-workplaces::workplaces(){
-
-    name = "";
-}
-
-void workplaces::set_name() {
-    this->name = name;
-}
-
-string workplaces::get_name() {
-    return this->name;
-}
-
-ostream& operator <<(ostream& out, workplaces& workplace){
-    out << workplace.name << endl;
-
-    return out;
-}
-
-istream& operator >>(istream& in, workplaces& workplace){
-    in >> workplace.name;
-
-    return in;
-}
-
-/*void workplaces::save()
+WorkplacesRepo::WorkplacesRepo()
 {
+    //ctor
+}
+
+void WorkplacesRepo::save(workplaces& workplaces)
+{
+    //string name = "";
     ofstream fout;
     fout.open("workplaces.txt", ios::app);
     if(fout.is_open()){
-        fout << name << endl;
+        fout << workplaces.get_name() << endl;
     }
     fout.close();
 }
 
-void workplaces::print()
+void WorkplacesRepo::print()
 {
     ifstream fin;
     string str;
@@ -55,7 +36,7 @@ void workplaces::print()
     }
 }
 
-void workplaces::print_line(int line_no){ // Prentar uppgefna línu eftir línunúmeri
+void WorkplacesRepo::print_line(int line_no){ // Prentar uppgefna línu eftir línunúmeri
 
     ifstream fin;
     string str;
@@ -73,25 +54,9 @@ void workplaces::print_line(int line_no){ // Prentar uppgefna línu eftir línunúm
     }
     else cout << "Unable to open file.";
 
-}*/
+}
 
-/*void workplaces::start_register()
-{
-    char input = 'y';
-
-    while (input == 'y'|| input == 'Y')
-    {
-        workplaces workplace;
-        cout << "Enter a Location: ";
-        cin >> workplace;
-        wRepo.save();
-
-        cout << "Do you want to register more Locations? Type 'y' for yes or 'n' for no: ";
-        cin >> input;
-    }
-}*/
-/*
-int workplaces::number_locations()
+int WorkplacesRepo::number_locations()
 {
     ifstream fin;
     string str;
@@ -109,4 +74,3 @@ int workplaces::number_locations()
         cout << "Unable to open file.";
     }
 }
-*/

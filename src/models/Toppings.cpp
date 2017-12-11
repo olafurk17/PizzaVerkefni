@@ -1,4 +1,4 @@
- #include "Toppings.h"
+#include "../../include/models/Toppings.h"
 
 
 
@@ -10,16 +10,18 @@ Toppings::Toppings(){
 }
 
 //constructor til að slá inn
-Toppings::Toppings(string name, int price){
+Toppings::Toppings(string name){
 
     this -> name = name;
-    //this -> price = price;
+}
+
+string Toppings::get_name(){
+    return this-> name;
 }
 
 ostream& operator <<(ostream& out, Toppings& topping){
 
     out << topping.name << " ";
-    //out << topping.price << endl;
 
     return out;
 }
@@ -27,13 +29,12 @@ ostream& operator <<(ostream& out, Toppings& topping){
 istream& operator >>(istream& in, Toppings& topping){
 
     in >> topping.name;
-    //in >> topping.price;
 
     return in;
 
 }
 
-void Toppings::save(){
+/*void Toppings::save(){
 
     ofstream fout;
     fout.open("toppings.txt", ios::app);
@@ -80,4 +81,5 @@ void Toppings::startRegester(Toppings& toppings) {
     }
 
 }
+*/
 

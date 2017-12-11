@@ -1,5 +1,6 @@
 #ifndef TOPPINGS_H
 #define TOPPINGS_H
+//#include "ToppingRepo.h"
 #include <string>
 #include <istream>
 #include <iostream>
@@ -13,11 +14,12 @@ class Toppings
 {
     public:
         Toppings();
-        Toppings (string name, int price);
+        Toppings (string name);
+        string get_name();
         friend ostream& operator <<(ostream& out, Toppings& topping);
         friend istream& operator >>(istream& in, Toppings& topping);
-        void save();
-        void print();
+        //void save();
+        //void print();
         void startRegester(Toppings& toppings);
 
 
