@@ -1,1 +1,2 @@
-margarita,1
+pepperoni, 7535920, pepperonipepperoni
+skinka, 7535920, skinka
