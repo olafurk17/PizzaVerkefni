@@ -1,4 +1,4 @@
-#include "../../include/models/Other.h"
+/*#include "../../include/models/Other.h"
 
 Other::Other()
 {
@@ -78,5 +78,5 @@ void Other::clear_screen(){
     for(int i = 0; i < 30; i++){
         cout << endl;
     }
-}
+}*/
 

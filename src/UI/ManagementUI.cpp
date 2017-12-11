@@ -131,16 +131,16 @@ void ManagementUI::Menu(){
     ManagementUI ui;
     do{
         clear_screen();
-        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
-        cin >> input;
-        if (input == 'P' || input == 'p'){
+///        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
+///        cin >> input;
+///        if (input == 'P' || input == 'p'){
                 regesterPizza();
-        }
-        if (input == 'o'|| input == 'O'){
-            Other other;
+///        }
+/*        if (input == 'o'|| input == 'O'){
+           Other other;
          ui.registerOther(other);
 
-        }
+        }*/
 
         cout << "Do you want to register more items on the menu? Type 'y' for yes or 'n' for no: " << endl;
         cin >> input;
@@ -150,7 +150,7 @@ void ManagementUI::Menu(){
         while (input == 'y' || input =='Y');
 }
 
-void ManagementUI::registerOther(Other& other){
+/*void ManagementUI::registerOther(Other& other){
 
     char input;
     string str;
@@ -214,13 +214,9 @@ void ManagementUI::registerOther(Other& other){
         while (input == 'y'|| input == 'Y');
         other.clear_screen();
     }
-
 }
     while (input == 'y' || input == 'Y');
-
-
-
-}
+}*/
 
 void ManagementUI::registerLocation()
 {

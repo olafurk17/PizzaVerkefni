@@ -1,4 +1,4 @@
-#include "OtherRepo.h"
+/*#include "OtherRepo.h"
 
 OtherRepo::OtherRepo()
 {
@@ -85,4 +85,4 @@ void Other::printDesert()
     else {
         cout << "Can not open file." << endl;
     }
-}
+}*/
