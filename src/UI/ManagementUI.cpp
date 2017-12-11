@@ -228,7 +228,7 @@ void ManagementUI::registerLocation()
         workplaces workplace;
         cout << "Enter a Location: ";
         cin >> workplace;
-       // workplace.save();
+        serviceW.save(workplace);
 
         cout << "Do you want to register more Locations? Type 'y' for yes or 'n' for no: ";
         cin >> input;

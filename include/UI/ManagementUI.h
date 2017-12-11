@@ -10,6 +10,7 @@
 #include "../service/PizzaMenuService.h"
 #include "../service/OtherService.h"
 #include "../service/ToppingService.h"
+#include "WorkplaceService.h"
 
 
 
@@ -33,6 +34,7 @@ class ManagementUI
         PizzaMenuService service;
  //       OtherService otherservice;
         ToppingService toppingservice;
+        WorkplaceService serviceW;
 };
 
 #endif // MANAGMENTUI_H
