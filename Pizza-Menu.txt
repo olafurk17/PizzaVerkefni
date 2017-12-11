@@ -1,2 +1,5 @@
 pepperoni, 7535920, pepperonipepperoni
 skinka, 7535920, skinka
+kristin, 4214757, pepperoni, skinkna, 
+kristin, 4214757, pepperoni, 
+krisitn, 4214757, oo, 

@@ -16,7 +16,7 @@ class PizzaMenu
 {
     public:
         PizzaMenu();
-        PizzaMenu(string name,  int toppingCnt);
+        PizzaMenu(string name,  int toppingCnt, int price);
         friend ostream& operator <<(ostream& out, PizzaMenu& pizza);
         friend istream& operator >>(istream& in, PizzaMenu& pizza);
         string getname();
@@ -26,10 +26,13 @@ class PizzaMenu
         int settoppingCnt(int t);
         int setprice(int p);
         vector <string> pizzaToppings;
+        int finalPrice();
     private:
         int toppingCnt;
         string name;
         int price;
+        int const basePrice = 1200;
+        int const toppingPrice = 250;
 };
 
 #endif // PIZZAMENU_H

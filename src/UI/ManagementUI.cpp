@@ -64,7 +64,7 @@ void ManagementUI::regesterPizza() {
         //pizza.setname(str);
         cout << "How many toppings are on " << name << " ? ";
         cin >> t;
-        PizzaMenu pizza(name,t);
+        PizzaMenu pizza(name,t,pizza.finalPrice());
 
        // pizza.settoppingCnt(t);
         cout << "What toppings are on " << name << " ? ";
