@@ -1,4 +1,4 @@
-#ifndef OTHER_H
+/*#ifndef OTHER_H
 #define OTHER_H
 #include <string>
 #include <iostream>
@@ -35,3 +35,4 @@ class Other
 };
 
 #endif // OTHER_H
+*/

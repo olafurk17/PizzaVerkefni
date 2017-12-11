@@ -1,4 +1,4 @@
-#ifndef OTHERSERVICE_H
+/*#ifndef OTHERSERVICE_H
 #define OTHERSERVICE_H
 #include "OtherRepo.h"
 #include "../models/Other.h"
@@ -20,3 +20,4 @@ class OtherService
 };
 
 #endif // OTHERSERVICE_H
+*/

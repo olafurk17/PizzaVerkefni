@@ -27,11 +27,11 @@ class ManagementUI
         void registerTopping();
         void selectTopping();
         void Menu();
-        void registerOther(Other& other);
+//        void registerOther(Other& other);
 
     private:
         PizzaMenuService service;
-        OtherService otherservice;
+ //       OtherService otherservice;
         ToppingService toppingservice;
 };
 
