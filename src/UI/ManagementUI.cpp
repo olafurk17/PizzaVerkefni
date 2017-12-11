@@ -51,22 +51,20 @@ void ManagementUI::mainMenu(){
 
 void ManagementUI::regesterPizza() {
 
-    char input = 'y';
+    char inpute = 'y';
     string name;
     int t;
 
-    while (input == 'y'|| input == 'Y')
+    while (inpute == 'y'|| inpute == 'Y')
     {   clear_screen();
         //PizzaMenu pizza;
-        cout << "Please enter the name and toppings for your pizza: " << endl << endl << endl << endl;
-
 
         cout << "Name of the pizza? ";
         cin >> name;
         //pizza.setname(str);
         cout << "How many toppings are on " << name << " ? ";
         cin >> t;
-        PizzaMenu pizza(name,t,pizza.finalPrice());
+        PizzaMenu pizza(name,t);
 
        // pizza.settoppingCnt(t);
         cout << "What toppings are on " << name << " ? ";
@@ -81,7 +79,7 @@ void ManagementUI::regesterPizza() {
            service.save(pizza);
 
         cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
-        cin >> input;
+        cin >> inpute;
         clear_screen();
 
     }
@@ -131,25 +129,25 @@ void ManagementUI::selectTopping()
 void ManagementUI::Menu(){
     char input;
     ManagementUI ui;
-//    do{
+    do{
         clear_screen();
-//        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
-//        cin >> input;
-//        if (input == 'P' || input == 'p'){
+///        cout << "Do you want to register a pizza (type 'p') or other items(type 'o') on the menu? " << endl;
+///        cin >> input;
+///        if (input == 'P' || input == 'p'){
                 regesterPizza();
-/*        }
-        if (input == 'o'|| input == 'O'){
+///        }
+/*        if (input == 'o'|| input == 'O'){
            Other other;
          ui.registerOther(other);
 
-        }
+        }*/
 
         cout << "Do you want to register more items on the menu? Type 'y' for yes or 'n' for no: " << endl;
         cin >> input;
         clear_screen();
         }
 
-        while (input == 'y' || input =='Y');*/
+        while (input == 'y' || input =='Y');
 }
 
 /*void ManagementUI::registerOther(Other& other){
@@ -236,8 +234,7 @@ void ManagementUI::registerLocation()
     }
 }
 
-void ManagementUI::clear_screen()
-{
+void ManagementUI::clear_screen(){
 
     for(int i = 0; i < 30; i++){
         cout << endl;

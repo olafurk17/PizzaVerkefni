@@ -15,10 +15,9 @@ PizzaMenu::PizzaMenu(){
     int price = 0;
 }
 
-PizzaMenu::PizzaMenu(string name, int toppingCnt, int price){
+PizzaMenu::PizzaMenu(string name, int toppingCnt){
     this -> name = name;
     this -> toppingCnt = toppingCnt;
-    this -> price = price;
 
 }
 
