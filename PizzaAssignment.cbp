@@ -39,6 +39,7 @@
 		<Unit filename="include/service/PizzaMenuService.h" />
 		<Unit filename="include/service/Price.h" />
 		<Unit filename="include/service/ToppingService.h" />
+		<Unit filename="include/service/WorkplaceService.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/UI/DeliveryUI.cpp" />
 		<Unit filename="src/UI/KitchenUI.cpp" />
@@ -57,6 +58,7 @@
 		<Unit filename="src/service/PizzaMenuService.cpp" />
 		<Unit filename="src/service/Price.cpp" />
 		<Unit filename="src/service/ToppingService.cpp" />
+		<Unit filename="src/service/WorkplaceService.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
