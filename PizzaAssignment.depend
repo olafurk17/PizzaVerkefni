@@ -174,7 +174,7 @@
 	<iostream>
 	"include/UI/MainUI.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\mainui.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\mainui.h
 	"ManagementUI.h"
 	"SalesUI.h"
 	"KitchenUI.h"
@@ -271,7 +271,7 @@
 	"../../include/models/Workplaces.h"
 	"../../include/UI/SalesUI.h"
 
-1513077284 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\managementui.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\managementui.h
 	<iostream>
 	<string>
 	"../models/Workplaces.h"
@@ -303,7 +303,7 @@
 	<iostream>
 	<fstream>
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\toppings.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\toppings.h
 	<string>
 	<istream>
 	<iostream>
@@ -325,7 +325,7 @@
 	<iostream>
 	<fstream>
 
-1513084961 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\models\pizzamenu.h
 	<string>
 	<istream>
 	<iostream>
@@ -343,10 +343,10 @@
 	<vector>
 	"Other.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\pizzamenuservice.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\pizzamenuservice.h
 	"PizzaMenuRepo.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\pizzamenurepo.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\pizzamenurepo.h
 	<iostream>
 	<fstream>
 	<vector>
@@ -370,7 +370,7 @@
 1512993624 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\otherrepo.h
 	"../../include/models/Other.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\toppingservice.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\toppingservice.h
 	<vector>
 	"../models/Toppings.h"
 	"../repositories/ToppingRepo.h"
@@ -387,7 +387,7 @@
 	"../models/Toppings.h"
 	"../repositories/ToppingRepo.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\toppingrepo.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\repositories\toppingrepo.h
 	<string>
 	<iostream>
 	<fstream>
@@ -401,7 +401,7 @@
 	<vector>
 	"../models/Toppings.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\salesui.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\ui\salesui.h
 	<iostream>
 	"../models/Toppings.h"
 	"../models/PizzaMenu.h"
@@ -440,7 +440,7 @@
 
 1512993624 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\other.cpp
 
-1513084961 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\pizzamenu.cpp
 	"../../include/models/PizzaMenu.h"
 	<string>
 	<istream>
@@ -463,15 +463,15 @@
 1512992140 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\toppings.cpp
 	"../../include/models/Toppings.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\workplaces.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\models\workplaces.cpp
 	"../../include/models/Workplaces.h"
 
 1512993624 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\otherrepo.cpp
 
-1513083315 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\pizzamenurepo.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\pizzamenurepo.cpp
 	"PizzaMenuRepo.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\toppingrepo.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\toppingrepo.cpp
 	"ToppingRepo.h"
 
 1512602266 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\repositories\workplacesrepo.cpp
@@ -479,13 +479,13 @@
 
 1512993624 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\otherservice.cpp
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\pizzamenuservice.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\pizzamenuservice.cpp
 	"../../include/service/PizzaMenuService.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\price.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\price.cpp
 	"../../include/service/Price.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\price.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\price.h
 	<iostream>
 	<fstream>
 	<string>
@@ -520,16 +520,16 @@
 	<fstream>
 	<string>
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\toppingservice.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\toppingservice.cpp
 	"ToppingService.h"
 
 1512992140 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\deliveryui.cpp
 	"../../include/UI/DeliveryUI.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\kitchenui.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\kitchenui.cpp
 	"../../include/UI/KitchenUI.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\mainui.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\mainui.cpp
 	"../../include/UI/MainUI.h"
 	<iostream>
 	<string>
@@ -554,10 +554,10 @@
 	"../../include/models/Toppings.h"
 	"../../include/models/Workplaces.h"
 
-1513085089 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\managementui.cpp
 	"../../include/UI/ManagementUI.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\salesui.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\ui\salesui.cpp
 	"../../include/UI/SalesUI.h"
 
 1512997040 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\managementui.cpp
@@ -566,10 +566,10 @@
 1513008038 source:c:\users\lenovo\documents\github\pizzaverkefni\src\ui\salesui.cpp
 	"../../include/UI/SalesUI.h"
 
-1513075512 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\workplaceservice.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\service\workplaceservice.cpp
 	"WorkplaceService.h"
 
-1513075511 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\workplaceservice.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\service\workplaceservice.h
 	"WorkplacesRepo.h"
 
 1513008100 source:c:\users\lenovo\documents\github\pizzaverkefni\src\service\workplaceservice.cpp
@@ -578,11 +578,11 @@
 1513008100 c:\users\lenovo\documents\github\pizzaverkefni\include\service\workplaceservice.h
 	"WorkplacesRepo.h"
 
-1513079067 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\exceptions\lowercasevalidation.h
+1513087901 c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\include\exceptions\lowercasevalidation.h
 	<string>
 	<iostream>
 	"../models/Workplaces.h"
 
-1513081967 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\exceptions\lowercasevalidation.cpp
+1513087901 source:c:\users\kristin\desktop\verkelgt\pizzaassignment\pizzaverkefni\src\exceptions\lowercasevalidation.cpp
 	"../../include/Exceptions/LowerCasevalidation.h"
 
