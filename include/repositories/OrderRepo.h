@@ -13,7 +13,7 @@ class OrderRepo
         OrderRepo();
         //void read(vector<Order>& order_vector);
         void write(Order& order);
-        Order readin_vector(string line);
+        //Order readin_vector(string line);
         void read();
 
     private:

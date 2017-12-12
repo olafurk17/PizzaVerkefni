@@ -5,7 +5,7 @@ OrderRepo::OrderRepo()
     //ctor
 }
 
-Order OrderRepo::readin_vector(string line){
+/*Order OrderRepo::readin_vector(string line){
     string str = "";
     vector<string> orders;
     for (unsigned int i = 0; i < line.length(); i++) {
@@ -21,9 +21,9 @@ Order OrderRepo::readin_vector(string line){
       //  cout << orders[i] << endl;
     Order o(atoi(orders[0].c_str()), atoi(orders[1].c_str()), atoi(orders[2].c_str()), atoi(orders[3].c_str()), atoi(orders[4].c_str()));
     return o;
-    }
+}*/
 
-void OrderRepo::read(){
+/*void OrderRepo::read(){
 
     vector<Order> order_from_file;
     ifstream fin;
@@ -70,7 +70,7 @@ void OrderRepo::read(){
 
         cout << "can not write in file, file is closed" << endl;
     }*/
-//}
+//}*/
 
 void OrderRepo::write(Order& order)
 {
