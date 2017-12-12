@@ -5,6 +5,7 @@
 #include <fstream>
 #include <vector>
 #include "Order.h"
+#include <cstdlib>
 
 class OrderRepo
 {
@@ -12,7 +13,7 @@ class OrderRepo
         OrderRepo();
         //void read(vector<Order>& order_vector);
         void write(Order& order);
-        void readin_vector(string line);
+        Order readin_vector(string line);
         void read();
 
     private:
