@@ -5,35 +5,35 @@ OrderRepo::OrderRepo()
     //ctor
 }
 
-void OrderRepo::readin_vector(string line){
-    string property = "";
-    vector<string> properties;
+Order OrderRepo::readin_vector(string line){
+    string str = "";
+    vector<string> orders;
     for (unsigned int i = 0; i < line.length(); i++) {
         if (line[i] == ','){
-             properties.push_back(property);
-            property = "";
+             orders.push_back(str);
+            str = "";
         }
         else {
-            property += line[i];
+            str += line[i];
         }
-
     }
-    for(size_t i = 0; i < properties.size(); i++){
-        cout << properties[i] << endl;
-
+    //for(size_t i = 0; i < orders.size(); i++){
+      //  cout << orders[i] << endl;
+    Order o(atoi(orders[0].c_str()), atoi(orders[1].c_str()), atoi(orders[2].c_str()), atoi(orders[3].c_str()), atoi(orders[4].c_str()));
+    return o;
     }
-
-}
 
 void OrderRepo::read(){
 
+    vector<Order> order_from_file;
     ifstream fin;
     string str;
     fin.open("activeorders.txt");
 
     if (fin.is_open()){
             while (getline(fin, str)){
-                    readin_vector(str);
+                   Order or = readin_vector(str);
+                   order_from_file.push_back(or)
 
             }
 
@@ -43,6 +43,8 @@ void OrderRepo::read(){
 
         cout << "can not write in file, file is closed" << endl;
     }
+    for(size_t i = 0; i < or  .size(); i++){
+        cout << order_from_file[i] << endl;
 }
 
 
