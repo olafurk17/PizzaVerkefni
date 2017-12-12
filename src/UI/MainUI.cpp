@@ -29,19 +29,19 @@ void MainUI::main() {
 
         if(selection == 'm'){
             clear_screen();
-            main_m.main_menu();
+            mainM.mainMenu();
         }
         else if(selection == 's'){
             clear_screen();
-            main_s.sales();
+            mainS.sales();
         }
         else if(selection == 'k'){
             clear_screen();
-            main_k.kitchen();
+            mainK.kitchen();
         }
         else if(selection == 'd'){
             clear_screen();
-            main_d.delivery();
+            mainD.delivery();
         }
         else if(selection == 'q'){
             running = false;

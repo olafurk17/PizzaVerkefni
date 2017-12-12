@@ -15,7 +15,7 @@ void ToppingRepo::write(Toppings& toppings){
     fout.close();
 }
 
-void ToppingRepo::read(vector<Toppings>& topping_vector){
+void ToppingRepo::read(vector<Toppings>& toppingVector){
 
     ifstream fin;
     string str;
@@ -26,11 +26,11 @@ void ToppingRepo::read(vector<Toppings>& topping_vector){
             while (!fin.eof()){
                 getline(fin,str, ',');
                 Toppings topping(str);
-                topping_vector.push_back(topping);
+                toppingVector.push_back(topping);
             }
 
         fin.close();
-        topping_vector.pop_back();
+        toppingVector.pop_back();
     }
     else{
 

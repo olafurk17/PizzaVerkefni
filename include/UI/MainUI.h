@@ -19,10 +19,10 @@ class MainUI
 
 
     private:
-        ManagementUI main_m;
-        SalesUI main_s;
-        KitchenUI main_k;
-        DeliveryUI main_d;
+        ManagementUI mainM;
+        SalesUI mainS;
+        KitchenUI mainK;
+        DeliveryUI mainD;
 };
 
 #endif // MAINUI_H
