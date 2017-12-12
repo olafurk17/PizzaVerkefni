@@ -10,8 +10,10 @@ class OrderRepo
 {
     public:
         OrderRepo();
-        void read(vector<Order>& order_vector);
+        //void read(vector<Order>& order_vector);
         void write(Order& order);
+        void readin_vector(string line);
+        void read();
 
     private:
 };

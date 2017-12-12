@@ -71,7 +71,7 @@ void Order::set_delivery(bool delivery)
     this->delivery = delivery;
 }
 
-void Order::set_price(int price)
+int Order::set_price(int price)
 {
     this->price = price;
 }

@@ -22,7 +22,7 @@ class Order
         void set_loc_no(int loc_no);
         void set_paid(bool paid);
         void set_delivery(bool delivery);
-        void set_price(int price);
+        int set_price(int price);
         void status_advance();
         friend ostream& operator << (ostream& out, Order& order);
         friend istream& operator >> (istream& in, Order& order);
