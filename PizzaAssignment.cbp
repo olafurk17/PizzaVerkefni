@@ -22,6 +22,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Exceptions/LowerCasevalidation.h" />
 		<Unit filename="include/UI/DeliveryUI.h" />
 		<Unit filename="include/UI/KitchenUI.h" />
 		<Unit filename="include/UI/MainUI.h" />
@@ -41,6 +42,7 @@
 		<Unit filename="include/service/ToppingService.h" />
 		<Unit filename="include/service/WorkplaceService.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Exceptions/LowerCasevalidation.cpp" />
 		<Unit filename="src/UI/DeliveryUI.cpp" />
 		<Unit filename="src/UI/KitchenUI.cpp" />
 		<Unit filename="src/UI/MainUI.cpp" />

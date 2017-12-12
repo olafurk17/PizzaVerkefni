@@ -76,18 +76,19 @@ void ManagementUI::regester_pizza() {
         cin >> s;
         cout << "How many toppings are on " << name << "? ";
         cin >> t;
-        PizzaMenu pizza(name,t,s);
+        PizzaMenu pizza(lower.switch_to_lower(name),t,s);
         cout << "What toppings are on " << name << " ? ";
         for (int i = 0; i < t; i++)
         {
             string str;
             cin >> str;
 
-            pizza.pizza_toppings.push_back(str);
+            pizza.pizza_toppings.push_back(lower.switch_to_lower(str));
         }
         service.final_price(pizza, service.size_price(s));
 
         service.write(pizza);
+        service.read();
 
         cout << endl;
         cout << "Do you want to register more pizzas on the menu 'y' for yes or 'n' for no: ";
@@ -112,7 +113,7 @@ void ManagementUI::register_topping()
         cout << "Name of the topping? ";
         cin >> str;
 
-        Toppings topping(str);
+        Toppings topping (lower.switch_to_lower(str));
 
         topping_service.write(topping);
 

@@ -17,20 +17,20 @@ void PizzaMenuRepo::write(PizzaMenu& menu){
 
 
 void PizzaMenuRepo::read_in_vector(string line){
-    string property = "";
-    vector<string> properties;
+    string str = "";
+    vector<string> pizza;
     for (unsigned int i = 0; i < line.length(); i++) {
         if (line[i] == ','){
-             properties.push_back(property);
-            property = "";
+             pizza.push_back(str);
+            str = "";
         }
         else {
-            property += line[i];
+            str += line[i];
         }
 
     }
-    for(size_t i = 0; i < properties.size(); i++){
-        cout << properties[i] << endl;
+    for(size_t i = 0; i < pizza.size(); i++){
+        cout << pizza[i] << endl;
 
     }
 

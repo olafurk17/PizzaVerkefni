@@ -11,6 +11,7 @@
 #include "../service/OtherService.h"
 #include "../service/ToppingService.h"
 #include "WorkplaceService.h"
+#include "../Exceptions/LowerCasevalidation.h"
 
 
 
@@ -35,6 +36,7 @@ class ManagementUI
  //       OtherService otherservice;
         ToppingService topping_service;
         WorkplaceService service_w;
+        LowerCasevalidation lower;
 };
 
 #endif // MANAGMENTUI_H

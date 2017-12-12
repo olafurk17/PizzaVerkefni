@@ -28,6 +28,7 @@ class PizzaMenu
         int set_topping_cnt(int t);
         int set_price(int p);
         vector <string> pizza_toppings;
+
     private:
         int topping_cnt;
         string name;
