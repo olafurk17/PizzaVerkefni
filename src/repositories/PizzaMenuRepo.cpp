@@ -16,7 +16,7 @@ void PizzaMenuRepo::write(PizzaMenu& menu){
 
 
 
-void PizzaMenuRepo::readin_vector(string line){
+void PizzaMenuRepo::read_in_vector(string line){
     string property = "";
     vector<string> properties;
     for (unsigned int i = 0; i < line.length(); i++) {
@@ -44,7 +44,7 @@ void PizzaMenuRepo::read(){
 
     if (fin.is_open()){
             while (getline(fin, str)){
-                    readin_vector(str);
+                    read_in_vector(str);
 
             }
 
@@ -55,26 +55,3 @@ void PizzaMenuRepo::read(){
         cout << "can not write in file, file is closed" << endl;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

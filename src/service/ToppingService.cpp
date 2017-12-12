@@ -10,7 +10,7 @@ void ToppingService::write(Toppings& topping)
     repo.write(topping);
 }
 
-void ToppingService::read(vector<Toppings>& toppingVector)
+void ToppingService::read(vector<Toppings>& topping_vector)
 {
-    repo.read(toppingVector);
+    repo.read(topping_vector);
 }

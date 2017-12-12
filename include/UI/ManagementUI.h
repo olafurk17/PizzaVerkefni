@@ -21,20 +21,20 @@ class ManagementUI
 {
     public:
         ManagementUI();
-        void mainMenu();
+        void main_menu();
         void clear_screen();
-        void registerLocation();
-        void regesterPizza();
-        void registerTopping();
-        void selectTopping();
-        void Menu();
+        void register_location();
+        void regester_pizza();
+        void register_topping();
+        void select_topping();
+        void menu();
 //        void registerOther(Other& other);
 
     private:
         PizzaMenuService service;
  //       OtherService otherservice;
-        ToppingService toppingservice;
-        WorkplaceService serviceW;
+        ToppingService topping_service;
+        WorkplaceService service_w;
 };
 
 #endif // MANAGMENTUI_H

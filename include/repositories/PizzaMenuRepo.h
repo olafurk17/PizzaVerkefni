@@ -16,7 +16,7 @@ class PizzaMenuRepo
         PizzaMenuRepo();
         void read();
         void write(PizzaMenu& pizza);
-        void readin_vector(string line);
+        void read_in_vector(string line);
 
     private:
         PizzaMenu menu;

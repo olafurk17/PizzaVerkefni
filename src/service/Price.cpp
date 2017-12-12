@@ -12,14 +12,14 @@ Price::~Price()
     //dtor
 }
 
-void Price::setPrice(double meat, double vegetable, double cheese)
+void Price::set_price(double meat, double vegetable, double cheese)
 {
     this->meat = meat;
     this->vegetable = vegetable;
     this->cheese = cheese;
 }
 
-void Price::txtPrice()
+void Price::txt_price()
 {
     cout << "What is the price of meat? ";
     cin >> meat;
@@ -40,7 +40,7 @@ void Price::txtPrice()
     fout.close();
 }
 
-void Price::printPrice()
+void Price::print_price()
 {
     string str;
     ifstream fin;
@@ -75,36 +75,36 @@ void Price::printPrice()
     cout << endl;
 }*/
 
-void Price::setNumber(int numbMeat, int numbVegetable, int numbCheese)
+void Price::set_number(int numb_meat, int numb_vegetable, int numb_cheese)
 {
-    this->numbMeat = numbMeat;
-    this->numbVegetable = numbVegetable;
-    this->numbCheese = numbCheese;
+    this->numb_meat = numb_meat;
+    this->numb_vegetable = numb_vegetable;
+    this->numb_cheese = numb_cheese;
 }
 
-void Price::multipleTopping()
+void Price::multiple_topping()
 {
     cout << "How many toppings of meat do you want? ";
-    cin >> numbMeat;
+    cin >> numb_meat;
     cout << "How many toppings of vegetables do you want? ";
-    cin >> numbVegetable;
+    cin >> numb_vegetable;
     cout << "How many layers of extra cheese do you want? ";
-    cin >> numbCheese;
+    cin >> numb_cheese;
     cout << endl;
 
 }
 
-void Price::calcTopping()
+void Price::calc_topping()
 {
-    meat = numbMeat*meat;
-    vegetable = numbVegetable*vegetable;
-    cheese = numbCheese*cheese;
+    meat = numb_meat*meat;
+    vegetable = numb_vegetable*vegetable;
+    cheese = numb_cheese*cheese;
 }
 
-void Price::totalPrice()
+void Price::total_price()
 {
-    cout << "Total price for your pizza with " << numbMeat << " toppings of meat, ";
-    cout << numbVegetable << " toppings of vegetables and " << numbCheese << " layers of extra cheese is: ";
+    cout << "Total price for your pizza with " << numb_meat << " toppings of meat, ";
+    cout << numb_vegetable << " toppings of vegetables and " << numb_cheese << " layers of extra cheese is: ";
     cout << meat+vegetable+cheese << endl;
 
     cout << endl;

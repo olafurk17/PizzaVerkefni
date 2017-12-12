@@ -10,7 +10,7 @@
 
 PizzaMenu::PizzaMenu(){
 
-    int toppingCnt = 0;
+    int topping_cnt = 0;
     string name = "";
     int price = 0;
 }
@@ -21,28 +21,28 @@ PizzaMenu::PizzaMenu(string name){
 
 }
 
-PizzaMenu::PizzaMenu(string name, int toppingCnt, char sizePizza){
+PizzaMenu::PizzaMenu(string name, int topping_cnt, char size_pizza){
     this -> name = name;
-    this -> toppingCnt = toppingCnt;
+    this -> topping_cnt = topping_cnt;
     int price = 0;
-    this -> sizePizza = sizePizza;
+    this -> size_pizza = size_pizza;
 
 }
 
 ostream& operator <<(ostream& out, PizzaMenu& pizza){
     out << pizza.name << ", ";
-    if (pizza.sizePizza == '1'){
+    if (pizza.size_pizza == '1'){
         out << "9 inches, ";
     }
-        if (pizza.sizePizza == '2'){
+        if (pizza.size_pizza == '2'){
         out << "12 inches, ";
     }
-        if (pizza.sizePizza == '3'){
+        if (pizza.size_pizza == '3'){
         out << "16 inches, ";
     }
-    for (int i = 0; i < pizza.gettoppingCnt(); i++)
+    for (int i = 0; i < pizza.get_topping_cnt(); i++)
         {
-            out << pizza.pizzaToppings[i] << ", ";
+            out << pizza.pizza_toppings[i] << ", ";
         }
         out << pizza.price << ", ";
     out << endl;
@@ -56,46 +56,46 @@ istream& operator >>(istream& in, PizzaMenu& pizza){
 
 }
 
-string PizzaMenu::getname() {
+string PizzaMenu::get_name() {
 
 this -> name  = name;
 return name;
 
 }
 
-int PizzaMenu::gettoppingCnt(){
+int PizzaMenu::get_topping_cnt(){
 
-    this -> toppingCnt = toppingCnt;
-    return toppingCnt;
+    this -> topping_cnt = topping_cnt;
+    return topping_cnt;
 }
 
 
-int PizzaMenu::getprice(){
+int PizzaMenu::get_price(){
 
     this -> price = price;
     return price;
 }
 
-int PizzaMenu::gettoppingPrice(){
+int PizzaMenu::get_topping_price(){
 
-    this -> toppingPrice = 250;
-    return toppingPrice;
+    this -> topping_price = 250;
+    return topping_price;
 }
 
 
-string PizzaMenu::setname(string str) {
+string PizzaMenu::set_name(string str) {
 
     this -> name = str;
 
 }
 
-int PizzaMenu::settoppingCnt(int t){
+int PizzaMenu::set_topping_cnt(int t){
 
-   this -> toppingCnt = t;
+   this -> topping_cnt = t;
 }
 
 
-int PizzaMenu::setprice(int p){
+int PizzaMenu::set_price(int p){
 
     this -> price = p;
 }
