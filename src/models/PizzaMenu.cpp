@@ -21,19 +21,30 @@ PizzaMenu::PizzaMenu(string name){
 
 }
 
-PizzaMenu::PizzaMenu(string name, int toppingCnt, char s){
+PizzaMenu::PizzaMenu(string name, int toppingCnt, char sizePizza){
     this -> name = name;
     this -> toppingCnt = toppingCnt;
     int price = 0;
+    this -> sizePizza = sizePizza;
 
 }
 
 ostream& operator <<(ostream& out, PizzaMenu& pizza){
-    out << pizza.name << ", " << pizza.price << ", ";
+    out << pizza.name << ", ";
+    if (pizza.sizePizza == '1'){
+        out << "9 inches, ";
+    }
+        if (pizza.sizePizza == '2'){
+        out << "12 inches, ";
+    }
+        if (pizza.sizePizza == '3'){
+        out << "16 inches, ";
+    }
     for (int i = 0; i < pizza.gettoppingCnt(); i++)
         {
             out << pizza.pizzaToppings[i] << ", ";
         }
+        out << pizza.price << ", ";
     out << endl;
 
     return out;

@@ -3,27 +3,7 @@
 PizzaMenuRepo::PizzaMenuRepo(){
     //ctor
 }
-void PizzaMenuRepo::read(vector<PizzaMenu>& pizzaMenuVector){
 
-    ifstream fin;
-    string str;
-    fin.open("Pizza-Menu.txt");
-
-    if (fin.is_open()){
-            while (!fin.eof()){
-                getline(fin,str);
-                PizzaMenu menu(str);
-                pizzaMenuVector.push_back(menu);
-            }
-
-        fin.close();
-        pizzaMenuVector.pop_back();
-    }
-    else{
-
-        cout << "can not write in file, file is closed" << endl;
-    }
-}
 
 void PizzaMenuRepo::write(PizzaMenu& menu){
  ofstream fout;
@@ -33,3 +13,68 @@ void PizzaMenuRepo::write(PizzaMenu& menu){
     }
     fout.close();
 }
+
+
+
+void PizzaMenuRepo::readin_vector(string line){
+    string property = "";
+    vector<string> properties;
+    for (unsigned int i = 0; i < line.length(); i++) {
+        if (line[i] == ','){
+             properties.push_back(property);
+            property = "";
+        }
+        else {
+            property += line[i];
+        }
+
+    }
+    for(size_t i = 0; i < properties.size(); i++){
+        cout << properties[i] << endl;
+
+    }
+
+}
+
+void PizzaMenuRepo::read(){
+
+    ifstream fin;
+    string str;
+    fin.open("Pizza-Menu.txt");
+
+    if (fin.is_open()){
+            while (getline(fin, str)){
+                    readin_vector(str);
+
+            }
+
+        fin.close();
+    }
+    else{
+
+        cout << "can not write in file, file is closed" << endl;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

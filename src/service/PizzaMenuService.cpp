@@ -9,8 +9,8 @@ void PizzaMenuService::write(PizzaMenu& menu){
     repo.write(menu);
 
 }
-void PizzaMenuService::read(vector<PizzaMenu>& pizzaMenuVector){
-    repo.read(pizzaMenuVector);
+void PizzaMenuService::read(){
+    repo.read();
 
 }
 

@@ -12,7 +12,7 @@ class PizzaMenuService
         void write(PizzaMenu& pizza);
         int finalPrice(PizzaMenu& pizza, int price);
         int sizePrice(char input);
-        void read(vector<PizzaMenu>& pizzaMenuVector);
+        void read();
 
     private:
         PizzaMenuRepo repo;

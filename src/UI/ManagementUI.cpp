@@ -15,16 +15,17 @@ void ManagementUI::mainMenu(){
         //cout << "s : Register Sizes" << endl;
         //cout << "p : Register Prices" << endl;
         cout << "l : Register Locations" << endl;
+        cout << "p : Read Menu items" << endl;
         cout << "r : Return" << endl;
 
         cin >> selection;
 
-        if(selection == 't'){
+        if(selection == 't' || selection == 'T'){
             clear_screen();
             registerTopping();
 
         }
-        else if(selection == 'm'){
+        else if(selection == 'm'|| selection == 'M'){
             clear_screen();
             Menu();
 
@@ -37,11 +38,16 @@ void ManagementUI::mainMenu(){
             clear_screen();
 
         }*/
-        else if(selection == 'l'){
+        else if(selection == 'l'|| selection == 'L'){
             clear_screen();
             registerLocation();
         }
-        else if(selection == 'r'){
+        else if(selection == 'p'|| selection == 'P'){
+            clear_screen();
+            service.read();
+        }
+
+        else if(selection == 'r'|| selection == 'R'){
             clear_screen();
             running = false;
 
@@ -64,15 +70,13 @@ void ManagementUI::regesterPizza() {
         cout << "Name of the pizza? ";
         cin >> name;
         cout << "What is the size of the pizza? " << endl;
-        cout << "1 : 9 Inches" << endl;
-        cout << "2 : 12 Inches" << endl;
-        cout << "3 : 16 Inches" << endl;
+        cout << "   1 : 9 Inches" << endl;
+        cout << "   2 : 12 Inches" << endl;
+        cout << "   3 : 16 Inches" << endl;
         cin >> s;
-        cout << "How many toppings are on " << name << " ? ";
+        cout << "How many toppings are on " << name << "? ";
         cin >> t;
         PizzaMenu pizza(name,t,s);
-
-       // pizza.settoppingCnt(t);
         cout << "What toppings are on " << name << " ? ";
         for (int i = 0; i < t; i++)
         {
@@ -83,10 +87,9 @@ void ManagementUI::regesterPizza() {
         }
         service.finalPrice(pizza, service.sizePrice(s));
 
-           service.write(pizza);
-           vector <PizzaMenu> pizzavector;
-           service.read(pizzavector);
+        service.write(pizza);
 
+        cout << endl;
         cout << "Do you want to regestir more pizza's on the menu 'y' for yes or 'n' for no: ";
         cin >> inpute;
         clear_screen();

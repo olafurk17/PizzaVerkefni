@@ -5,6 +5,7 @@
 #include <fstream>
 #include <vector>
 #include "../models/PizzaMenu.h"
+#include "string"
 
 using namespace std;
 
@@ -13,8 +14,9 @@ class PizzaMenuRepo
 {
     public:
         PizzaMenuRepo();
-        void read(vector<PizzaMenu>& pizzaMenuVector);
+        void read();
         void write(PizzaMenu& pizza);
+        void readin_vector(string line);
 
     private:
         PizzaMenu menu;
