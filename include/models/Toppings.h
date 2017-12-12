@@ -20,7 +20,7 @@ class Toppings
         friend istream& operator >>(istream& in, Toppings& topping);
         //void save();
         //void print();
-        void start_regester(Toppings& toppings);
+        void startRegester(Toppings& toppings);
 
 
     private:

@@ -10,8 +10,6 @@
 #include "../service/PizzaMenuService.h"
 #include "../service/OtherService.h"
 #include "../service/ToppingService.h"
-#include "WorkplaceService.h"
-#include "../Exceptions/LowerCasevalidation.h"
 
 
 
@@ -22,21 +20,19 @@ class ManagementUI
 {
     public:
         ManagementUI();
-        void main_menu();
+        void mainMenu();
         void clear_screen();
-        void register_location();
-        void regester_pizza();
-        void register_topping();
-        void select_topping();
-        void menu();
+        void registerLocation();
+        void regesterPizza();
+        void registerTopping();
+        void selectTopping();
+        void Menu();
 //        void registerOther(Other& other);
 
     private:
         PizzaMenuService service;
  //       OtherService otherservice;
-        ToppingService topping_service;
-        WorkplaceService service_w;
-        LowerCasevalidation lower;
+        ToppingService toppingservice;
 };
 
 #endif // MANAGMENTUI_H

@@ -31,7 +31,6 @@ void KitchenUI::kitchen(){
             //kitchen_set_place(input);
             phase = 2;
             clear_screen();
-
         }
         else if(phase == 2){
             cout << endl << "  -KITCHEN-" << endl << endl;

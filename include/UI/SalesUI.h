@@ -7,6 +7,8 @@
 #include "../models/PizzaMenu.h"
 #include "../models/Workplaces.h"
 #include "../models/Other.h"
+#include "../models/Order.h"
+#include "../service/OrderService.h"
 
 using namespace std;
 
@@ -17,8 +19,10 @@ class SalesUI
         SalesUI();
         void sales();
         void clear_screen();
+        void new_order();
 
     private:
+        OrderService order_service;
 };
 
 #endif // SALESUI_H

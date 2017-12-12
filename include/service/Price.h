@@ -11,14 +11,14 @@ class Price
     public:
         Price();
         virtual ~Price();
-        void set_price(double meat, double vegetable, double cheese);
-        void set_number(int numb_meat, int numb_vegetable, int numb_cheese);
-        void txt_price();
-        void print_price();
+        void setPrice(double meat, double vegetable, double cheese);
+        void setNumber(int numbMeat, int numbVegetable, int numbCheese);
+        void txtPrice();
+        void printPrice();
         //void readPrice();
-        void multiple_topping();
-        void calc_topping();
-        void total_price();
+        void multipleTopping();
+        void calcTopping();
+        void totalPrice();
 
         friend ostream& operator << (ostream& out, const Price& price);
 
@@ -27,9 +27,9 @@ class Price
         double meat;
         double vegetable;
         double cheese;
-        int numb_meat;
-        int numb_vegetable;
-        int numb_cheese;
+        int numbMeat;
+        int numbVegetable;
+        int numbCheese;
 };
 
 #endif // PRICE_H
